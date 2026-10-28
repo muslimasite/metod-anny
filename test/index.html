@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Тест «Какая программа подходит именно вам?» — Метод Анны</title>
+<meta name="description" content="3 коротких вопроса — и вы узнаете, с чего начать, чтобы вернуть телу лёгкость, энергию и женское здоровье. 1 минута.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Тест: какая программа подходит именно вам? — Метод Анны">
+<meta property="og:description" content="3 коротких вопроса — и вы узнаете, с чего начать, чтобы вернуть телу лёгкость, энергию и женское здоровье. 1 минута.">
+<meta property="og:image" content="https://muslimasite.github.io/metod-anny/img/logo-round.png">
+<meta property="og:url" content="https://muslimasite.github.io/metod-anny/test/">
+<link rel="icon" href="../img/logo-160.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700&family=Amiri&display=swap">
+<style>
+:root{--bg:#F4EBDD;--card:#FBF6EF;--card2:#EFE2CF;--wine:#8A1C2C;--wine-d:#6A1421;--teal:#1B6E7E;--olive:#5C6A3A;--peach:#E9BFA6;--ink:#2B1D1A;--muted:#5B4842;--line:#E2D1BC;--r:24px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Montserrat',system-ui,sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--wine)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+.sec{padding:clamp(56px,8vw,104px) 0}
+.kick{margin:0 0 14px;display:inline-flex;align-items:center;gap:12px;font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--wine)}
+.kick:before{content:"";width:28px;height:2px;background:var(--wine);border-radius:2px}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:500;color:var(--ink);margin:0}
+h2{font-size:clamp(32px,4.4vw,52px);line-height:1.1;letter-spacing:-.01em}
+h2 em,h1 em{font-style:italic;color:var(--wine)}
+.lead{font-size:clamp(16px,1.4vw,18px);color:var(--muted);max-width:620px;margin:16px 0 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;transition:background .2s,color .2s,transform .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn:focus-visible,summary:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.btn-wine{background:var(--wine);color:#FFF8F0} .btn-wine:hover{background:var(--wine-d);color:#fff}
+.btn-line{border:1.5px solid var(--wine);color:var(--wine);background:transparent} .btn-line:hover{background:var(--wine);color:#FFF8F0}
+.btn-cream{background:#FBF6EF;color:var(--wine)} .btn-cream:hover{background:#fff}
+/* header */
+.hdr{position:sticky;top:0;z-index:20;background:rgba(244,235,221,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.brand img{width:52px;height:52px;aspect-ratio:1}
+.brand b{display:block;font-family:'Playfair Display',serif;font-weight:600;font-size:20px;line-height:1.1;color:var(--wine)}
+.brand small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.nav{display:flex;gap:26px}
+.nav a{text-decoration:none;color:var(--ink);font-size:14px;font-weight:500}
+.nav a:hover{color:var(--wine)}
+.hdr .btn{min-height:46px;padding:10px 20px;font-size:14px}
+@media (max-width:980px){.nav{display:none}}
+.hdr-btn .short{display:none} @media (max-width:600px){.hdr-btn .long{display:none}.hdr-btn .short{display:inline}.hdr .wrap{min-height:66px}.brand img{width:44px;height:44px}.brand b{font-size:18px}} @media (max-width:420px){.brand small{display:none}.hdr .btn{padding:10px 18px;font-size:13.5px;min-height:42px}}
+/* hero */
+.hero{position:relative;overflow:hidden;color:#FBEFE6;background:radial-gradient(ellipse 70% 80% at 78% 40%,#A82A3D 0%,#7E1727 38%,#4A0C17 100%)}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 110%,rgba(233,191,166,.18),transparent 45%);pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:clamp(32px,5vw,72px);padding-top:clamp(56px,8vw,110px);padding-bottom:clamp(64px,8vw,120px)}
+.hero .kick{color:#F2C9B8} .hero .kick:before{background:#F2C9B8}
+.hero h1{font-size:clamp(40px,5.6vw,76px);line-height:1.02;letter-spacing:-.02em;color:#FFF8F0}
+.hero h1 em{color:#F2C9B8}
+.hero .lead{color:#F1D9CF;margin-top:24px;max-width:540px}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.btn-ghost{border:1.5px solid rgba(251,239,230,.55);color:#FFF8F0;background:transparent} .btn-ghost:hover{background:rgba(251,239,230,.12);color:#fff}
+.hero .btn-cream{box-shadow:0 14px 30px -12px rgba(0,0,0,.45)}
+.stats{display:flex;flex-wrap:wrap;gap:0;margin:44px 0 0;padding-top:26px;border-top:1px solid rgba(251,239,230,.2)}
+.stats div{padding:0 26px;border-left:1px solid rgba(251,239,230,.2)} .stats div:first-child{padding-left:0;border-left:0}
+.stats dt{font-family:'Playfair Display',serif;font-size:clamp(28px,3vw,38px);line-height:1;color:#FFF8F0}
+.stats dd{margin:8px 0 0;font-size:13px;line-height:1.35;color:#E8C3B6}
+.medal{position:relative;justify-self:center;width:min(100%,500px);aspect-ratio:1;display:grid;place-items:center}
+.ring{position:absolute;inset:0;width:100%;height:100%;animation:spin 60s linear infinite}
+.ring text{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:600;fill:#F2C9B8}
+@keyframes spin{to{transform:rotate(360deg)}}
+.medal-img{position:relative;width:76%;height:auto;aspect-ratio:1;border-radius:50%;box-shadow:0 0 0 10px rgba(251,239,230,.08),0 0 0 11px rgba(242,201,184,.35),0 40px 80px -20px rgba(20,2,6,.7),0 0 120px rgba(242,201,184,.25)}
+.float{position:absolute;display:flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;background:#FBF6EF;color:var(--ink);font-size:14px;font-weight:600;box-shadow:0 18px 36px -14px rgba(20,2,6,.6);animation:bob 6s ease-in-out infinite}
+.float svg{color:var(--wine)}
+.f1{left:-2%;bottom:16%} .f2{right:-4%;top:12%;animation-delay:-3s}
+@keyframes bob{50%{transform:translateY(-8px)}}
+.hero-leaf{position:absolute;width:120px;opacity:.5;pointer-events:none}
+.l1{left:-26px;top:40px;transform:rotate(-18deg)} .l2{right:44%;bottom:-70px;transform:rotate(24deg);width:96px;opacity:.35}
+@media (prefers-reduced-motion:reduce){.ring,.float{animation:none}}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}.medal{width:min(92%,420px)}.f1{left:0}.f2{right:0}.l2{display:none}}
+@media (max-width:480px){.stats div{padding:0 14px}.float{font-size:12.5px;padding:10px 14px}.hero-btns .btn{width:100%}}
+.trust-sec{position:relative;margin-top:-34px;z-index:2}
+/* trust */
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.trust div{display:flex;align-items:center;gap:12px;padding:18px;background:var(--card);border-radius:18px;box-shadow:0 18px 40px -26px rgba(74,12,23,.55);font-size:14px;font-weight:500;line-height:1.35}
+.trust svg{flex:none;color:var(--teal)}
+@media (max-width:860px){.trust{grid-template-columns:1fr 1fr}}
+@media (max-width:420px){.trust div{padding:14px;font-size:13px;flex-direction:column;align-items:flex-start;gap:8px}}
+/* worries */
+.worry{background:var(--card);border-radius:32px;padding:clamp(28px,5vw,64px)}
+.chips{list-style:none;margin:32px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:10px}
+.chip{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:#FFFCF7;font-size:15px;line-height:1.4}
+.chip-dot{flex:none;width:10px;height:10px;margin-top:5px;border-radius:50%;background:var(--wine)}
+.chip:nth-child(3n+2) .chip-dot{background:var(--teal)} .chip:nth-child(3n) .chip-dot{background:var(--olive)}
+.worry-cta{margin-top:30px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:26px;border-top:1px solid var(--line)}
+.worry-cta p{margin:0;font-family:'Playfair Display',serif;font-size:clamp(20px,2.2vw,26px);line-height:1.3}
+/* quiz */
+.quiz{margin-top:30px;background:#FFFCF7;border:1px solid var(--line);border-radius:28px;padding:clamp(20px,3.4vw,40px)}
+.q-top{display:flex;align-items:center;gap:16px}
+.q-step{flex:none;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--wine)}
+.q-bar{flex:1;height:6px;border-radius:6px;background:#EADBC8;overflow:hidden}
+.q-bar i{display:block;height:100%;width:33%;border-radius:6px;background:linear-gradient(90deg,var(--wine),#C2475A);transition:width .4s}
+.q-pane{margin-top:22px;animation:qIn .35s ease}
+@keyframes qIn{from{opacity:0;transform:translateY(8px)}}
+.q-h{font-size:clamp(24px,2.6vw,32px)}
+.q-hint{margin:6px 0 0;color:var(--muted);font-size:14px}
+.q-grid{margin-top:20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:10px}
+.q-opt{display:flex;align-items:center;gap:12px;width:100%;min-height:56px;padding:12px 16px;border:1.5px solid var(--line);border-radius:16px;background:#fff;color:var(--ink);font:inherit;font-size:15px;font-weight:500;line-height:1.35;text-align:left;cursor:pointer;transition:border-color .2s,background .2s}
+.q-opt:hover{border-color:#C9A58F}
+.q-opt:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.q-box{flex:none;width:24px;height:24px;border-radius:8px;border:1.5px solid #CBB29C;display:grid;place-items:center;color:transparent;transition:all .2s}
+
+.q-opt[aria-pressed="true"]{border-color:var(--wine);background:#FBEFEA}
+.q-opt[aria-pressed="true"] .q-box{background:var(--wine);border-color:var(--wine);color:#fff}
+.q-hello{text-align:center;padding:10px 0 6px} .q-salam{margin:0 0 6px;font-family:'Amiri',serif;font-size:clamp(22px,2.4vw,28px);color:var(--olive)} .q-lead{max-width:520px;margin:12px auto 0;color:var(--muted)} .q-perks{list-style:none;margin:20px 0 26px;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px} .q-perks li{display:flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;background:var(--card2);font-size:14px;font-weight:600} .q-perks svg{color:var(--wine)} .q-text p{margin:14px 0 0;line-height:1.65} .q-text b{color:var(--wine)} .q-text p:first-child{padding:16px 18px;border-radius:18px;background:var(--card2);margin-top:16px} .q-method{margin-top:20px;padding:18px;border-radius:20px;background:#1B6E7E;color:#F2FAFB} .q-method b{display:block;font-family:'Playfair Display',serif;font-weight:500;font-size:20px;text-align:center} .q-method ol{list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;text-align:center;font-size:13.5px;line-height:1.35} .q-method span{display:grid;place-items:center;width:32px;height:32px;margin:0 auto 6px;border-radius:50%;background:#FBF6EF;color:#1B6E7E;font-weight:700} .q-about{margin:16px 0 0;font-size:14.5px;color:var(--muted);line-height:1.6} .q-method li{min-width:0} @media (max-width:560px){.q-method ol{grid-template-columns:1fr;text-align:left} .q-method li{display:flex;align-items:center;gap:12px} .q-method span{margin:0;flex:none}} .q-small{margin:16px 0 0;font-size:13px;color:var(--muted);line-height:1.5} .q-warn{margin:8px 0 0;font-size:12px;color:#8A7A74} .q-nav{margin-top:24px;display:flex;justify-content:space-between;gap:12px}
+.q-nav [data-next]{margin-left:auto}
+.btn[disabled]{opacity:.4;cursor:not-allowed;transform:none}
+.q-dirs{margin-top:18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px}
+.q-dir{display:flex;gap:14px;align-items:center;padding:16px;border-radius:20px;background:var(--card2)}
+.q-dir .dir-ill{flex:none;width:72px;margin:0}
+.q-dir b{display:block;font-family:'Playfair Display',serif;font-weight:500;font-size:21px;line-height:1.2}
+.q-dir span{display:block;margin-top:4px;font-size:14px;line-height:1.45;color:var(--muted)}
+.q-fmt{margin:18px 0 0;font-size:16px} .q-fmt b{color:var(--wine)}
+.q-note{margin:14px 0 0;display:flex;gap:10px;align-items:flex-start;padding:14px 16px;border-radius:16px;background:#E6EADB;color:#3E4824;font-size:14.5px;line-height:1.5}
+.q-note svg{flex:none;margin-top:2px}
+.q-actions{margin-top:22px;display:flex;flex-wrap:wrap;gap:12px}
+@media (max-width:480px){.q-actions .btn,.q-nav .btn{flex:1}}
+/* directions */
+.dirs{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
+.dir{background:var(--card);border-radius:var(--r);padding:22px 22px 26px;display:flex;flex-direction:column;gap:10px}
+.dir-ill{width:72%;max-width:180px;aspect-ratio:1;margin:4px auto 10px;filter:drop-shadow(0 14px 18px rgba(106,20,33,.16))} .dir-ill svg{display:block;width:100%;height:100%}
+.dir h3{font-size:24px}
+.dir p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.55}
+@media (max-width:980px){.dirs{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.dirs{grid-template-columns:1fr}.dir{flex-direction:row;flex-wrap:wrap;align-items:center}.dir-ill{width:96px;margin:0}.dir h3{flex:1}.dir p{flex-basis:100%}}
+/* method */
+.steps{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:s}
+.steps li{position:relative;background:var(--card);border-radius:var(--r);padding:28px 26px}
+.steps li:before{counter-increment:s;content:"0" counter(s);font-family:'Playfair Display',serif;font-style:italic;font-size:44px;line-height:1;color:var(--peach)}
+.steps h3{font-size:24px;margin:14px 0 8px}
+.steps p{margin:0;color:var(--muted);font-size:15px}
+.self{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}
+.self span{padding:9px 16px;border-radius:999px;background:#E3EDE9;color:#13525E;font-size:14px;font-weight:600}
+@media (max-width:760px){.steps{grid-template-columns:1fr}}
+/* about */
+.about{display:grid;grid-template-columns:1fr 1.05fr;gap:18px;margin-top:40px}
+.about-q{background:var(--wine);color:#FBEFE6;border-radius:var(--r);padding:clamp(28px,4vw,48px);position:relative;overflow:hidden}
+.about-q .big{font-family:'Playfair Display',serif;font-size:clamp(64px,8vw,96px);line-height:.9;color:#FBF6EF}
+.about-q .big small{display:block;font-family:'Montserrat',sans-serif;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#F2C9B8;margin-top:10px}
+.about-q blockquote{margin:28px 0 0;font-size:clamp(16px,1.5vw,18px);line-height:1.75;color:#FBEFE6} .about-q blockquote:before{content:'“';display:block;font-family:'Playfair Display',serif;font-size:64px;line-height:.5;color:#F2C9B8;margin-bottom:14px}
+.about-q img{position:absolute;right:-30px;top:-30px;width:150px;opacity:.16}
+.about-l{background:var(--card);border-radius:var(--r);padding:clamp(28px,4vw,48px)}
+.about-l h3{font-size:30px}
+.about-l .role{margin:6px 0 22px;color:var(--muted)}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px} .fact{background:#FFFCF7;border:1px solid var(--line);border-radius:18px;padding:18px 18px 16px;display:flex;flex-direction:column;gap:4px} .fact b{font-family:'Playfair Display',serif;font-weight:500;font-size:34px;line-height:1;color:var(--wine)} .fact span{font-size:14px;line-height:1.4;color:var(--muted)} .about-note{margin:18px 0 0;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:15px} .checks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+.checks li{display:flex;gap:12px;align-items:flex-start;line-height:1.45}
+.checks svg{flex:none;color:var(--teal);margin-top:1px}
+@media (max-width:860px){.about{grid-template-columns:1fr}}
+/* formats */
+.trial{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:10px 18px;border-radius:999px;background:#E6EADB;color:#45502A;font-weight:600;font-size:14px}
+.fmts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.fmt{background:var(--card);border-radius:var(--r);padding:30px 26px;display:flex;flex-direction:column;gap:12px;border:1.5px solid transparent}
+.fmt.hl{border-color:var(--wine)}
+.fmt-ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:#F3E3D8;color:var(--wine)}
+.fmt h3{font-size:25px}
+.fmt p{margin:0;color:var(--muted);font-size:15px}
+.price{margin-top:auto;padding-top:16px;border-top:1px solid var(--line);font-family:'Playfair Display',serif;font-size:34px;line-height:1.1;color:var(--ink)}
+.price small{font-family:'Montserrat',sans-serif;font-size:14px;color:var(--muted)}
+.fmt .btn{margin-top:8px}
+.note{margin:20px 0 0;color:var(--muted);font-size:15px}
+@media (max-width:900px){.fmts{grid-template-columns:1fr}}
+/* edu */
+.edu{background:var(--wine);color:#FBEFE6;border-radius:32px;padding:clamp(32px,6vw,72px);display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(24px,5vw,64px);align-items:center;position:relative;overflow:hidden}
+.edu .kick{color:#F2C9B8} .edu .kick:before{background:#F2C9B8}
+.edu h2{color:#FFF8F0} .edu h2 em{color:#F2C9B8}
+.edu p{color:#F3DDD3;margin:18px 0 0;font-size:16.5px}
+.edu ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.edu li{display:flex;gap:12px;align-items:center;background:rgba(255,248,240,.08);border:1px solid rgba(255,248,240,.18);border-radius:16px;padding:14px 16px;font-weight:500}
+.edu li svg{flex:none;color:#F2C9B8}
+.edu .btn{margin-top:28px}
+@media (max-width:860px){.edu{grid-template-columns:1fr}}
+/* reviews */
+.revs{columns:3 300px;column-gap:18px;margin-top:40px}
+.rev{break-inside:avoid;margin:0 0 18px;background:var(--card);border-radius:var(--r);padding:26px 24px 22px;position:relative}
+.rev-q{font-family:'Playfair Display',serif;font-size:64px;line-height:.6;color:var(--peach);display:block;height:26px}
+.rev blockquote{margin:0;font-size:15.5px;line-height:1.6}
+.rev figcaption{margin-top:16px;display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;color:var(--muted)}
+.rev-av{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#F3E3D8;color:var(--wine)}
+.feat{background:var(--card2);border-radius:32px;padding:clamp(28px,5vw,56px);margin-top:40px;display:grid;grid-template-columns:auto 1fr;gap:clamp(18px,3vw,36px)}
+.feat .n{font-family:'Playfair Display',serif;font-size:clamp(56px,7vw,88px);line-height:.9;color:var(--wine)}
+.feat .n small{display:block;font-family:'Montserrat',sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+.feat blockquote{margin:0;font-size:clamp(15.5px,1.4vw,17px);line-height:1.75}
+.feat blockquote p{margin:0 0 12px}
+.feat figcaption{margin-top:8px;font-size:13px;font-weight:600;color:var(--muted)}
+@media (max-width:640px){.feat{grid-template-columns:1fr}}
+.quick{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.quick li{padding:12px 18px;border-radius:999px 999px 999px 6px;background:#FFFCF7;border:1px solid var(--line);font-size:14.5px;line-height:1.4}
+/* carousel */
+.car{margin-top:32px}
+.car-track{display:flex;align-items:flex-start;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;margin:0 calc(-1*clamp(16px,4vw,40px));padding:6px clamp(16px,4vw,40px) 14px;scroll-padding:0 clamp(16px,4vw,40px)}
+.car-track::-webkit-scrollbar{display:none}
+.car-track:focus-visible{outline:3px solid var(--teal);outline-offset:2px;border-radius:12px}
+.slide{flex:0 0 min(84%,380px);scroll-snap-align:start;margin:0;background:var(--card);border-radius:var(--r);padding:26px 24px 22px;display:flex;flex-direction:column;box-shadow:0 18px 40px -30px rgba(74,12,23,.5)}
+.slide-big{flex-basis:min(88%,520px);background:var(--card2)}
+.slide blockquote{margin:0;font-size:16px;line-height:1.65}
+.slide blockquote p{margin:0 0 12px} .slide blockquote p:last-child{margin:0}
+.slide figcaption{margin-top:18px;display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;color:var(--muted)}
+.slide-tag{align-self:flex-start;margin-bottom:14px;padding:6px 14px;border-radius:999px;background:var(--wine);color:#FFF8F0;font-size:12px;font-weight:600;letter-spacing:.06em}
+.slide-chips ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;flex:1}
+.slide-chips li{padding:14px 16px;border-radius:18px 18px 18px 6px;background:#FFFCF7;border:1px solid var(--line);font-size:15px;line-height:1.45}
+.car-nav{margin-top:18px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.car-dots{display:flex;flex-wrap:wrap;gap:8px}
+.car-dot{width:10px;height:10px;padding:0;border:0;border-radius:999px;background:#D9C3AE;cursor:pointer;transition:width .25s,background .25s}
+.car-dot[aria-selected="true"]{width:28px;background:var(--wine)}
+.car-btns{display:flex;gap:10px}
+.car-btn{width:52px;height:52px;border-radius:50%;border:1.5px solid var(--wine);background:transparent;color:var(--wine);display:grid;place-items:center;cursor:pointer;transition:background .2s,color .2s}
+.car-btn:hover,.car-next{background:var(--wine);color:#FFF8F0}
+.car-btn:focus-visible,.car-dot:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.car-btn[disabled]{opacity:.35;cursor:default}
+/* path */
+.path{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.path li{text-align:center;padding:0 6px;position:relative}
+.path .dot{width:64px;height:64px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;background:var(--card);border:1.5px solid var(--line);color:var(--wine);font-family:'Playfair Display',serif;font-size:22px}
+.path li:not(:last-child):after{content:"";position:absolute;top:32px;left:calc(50% + 40px);right:calc(-50% + 40px);height:1.5px;background:repeating-linear-gradient(90deg,var(--peach) 0 6px,transparent 6px 12px)}
+.path h3{font-size:19px;margin-bottom:6px}
+.path p{margin:0;font-size:14px;color:var(--muted);line-height:1.45}
+@media (max-width:860px){.path{grid-template-columns:1fr;gap:10px}.path li{display:grid;grid-template-columns:64px 1fr;gap:16px;text-align:left;align-items:center;background:var(--card);border-radius:18px;padding:14px}.path .dot{margin:0;background:#F3E3D8;border:0}.path li:after{display:none}}
+/* faq */
+.faqs{margin-top:36px;display:flex;flex-direction:column;gap:12px;max-width:880px}
+.faq{background:var(--card);border-radius:20px;padding:0 24px}
+.faq summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 0;font-family:'Playfair Display',serif;font-size:clamp(18px,1.8vw,21px);line-height:1.3}
+.faq summary::-webkit-details-marker{display:none}
+.faq-i{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#F3E3D8;color:var(--wine);transition:transform .25s}
+.faq[open] .faq-i{transform:rotate(45deg)}
+.faq p{margin:0 0 22px;color:var(--muted);max-width:720px}
+/* cta */
+.cta{background:var(--card2);border-radius:32px;padding:clamp(32px,6vw,72px);display:grid;grid-template-columns:auto 1fr auto;gap:clamp(20px,4vw,48px);align-items:center}
+.cta img{width:clamp(120px,14vw,170px);height:auto;aspect-ratio:1}
+.cta h2{font-size:clamp(28px,3.6vw,44px)}
+.cta p{margin:12px 0 0;color:var(--muted)}
+@media (max-width:860px){.cta{grid-template-columns:1fr;text-align:center;justify-items:center}}
+/* footer */
+.ftr{padding:40px 0 48px;border-top:1px solid var(--line);margin-top:clamp(56px,8vw,104px)}
+.ftr .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
+.ftr nav{display:flex;flex-wrap:wrap;gap:8px 22px}
+.ftr nav a{color:var(--muted);text-decoration:none;font-size:14px}
+.ftr nav a:hover{color:var(--wine)}
+.ftr small{color:var(--muted);font-size:13px}
+.ftr .tg{display:inline-flex;align-items:center;gap:8px;font-weight:600;text-decoration:none}
+
+body{background:radial-gradient(ellipse 90% 60% at 50% 0%,#A82A3D 0%,#7E1727 30%,#4A0C17 60%,#3A0912 100%) fixed;min-height:100vh}
+.t-wrap{max-width:760px;margin:0 auto;padding:clamp(20px,4vw,48px) 16px 48px}
+.t-head{text-align:center;color:#FBEFE6;margin-bottom:22px}
+.t-head img{width:96px;height:96px;margin:0 auto 14px;border-radius:50%;box-shadow:0 0 0 6px rgba(251,239,230,.08),0 0 0 7px rgba(242,201,184,.35),0 20px 40px -14px rgba(0,0,0,.6)}
+.t-head .kick{color:#F2C9B8;justify-content:center} .t-head .kick:before{background:#F2C9B8}
+.t-head h1{color:#FFF8F0;font-size:clamp(28px,4.4vw,42px);line-height:1.12} .t-head h1 em{color:#F2C9B8}
+.t-wrap .quiz{margin-top:0;box-shadow:0 30px 70px -30px rgba(0,0,0,.65)}
+.t-foot{text-align:center;margin-top:22px} .t-foot a{color:#F2C9B8;font-size:14px;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(242,201,184,.5)}
+</style>
+</head>
+<body>
+<main class="t-wrap">
+  <header class="t-head">
+    <img src="../img/logo-round.png" alt="Метод Анны" width="96" height="96">
+    <p class="kick">Метод Анны · тест 1 минута</p>
+    <h1>Какая программа подходит <em>именно вам?</em></h1>
+  </header>
+  <div class="quiz" data-quiz data-tg="https://t.me/annanaryadchicova?text=">
+  <div class="q-top"><span class="q-step" aria-live="polite">Начало</span><div class="q-bar" aria-hidden="true"><i></i></div></div>
+  <div class="q-pane q-hello" data-pane="0">
+    <p class="q-salam" lang="ar" dir="rtl">السلام عليكم ورحمة الله وبركاته</p>
+    <h3 class="q-h">Ассаляму алейкум, сестра!</h3>
+    <p class="q-lead">Ответьте на 3 коротких вопроса — и узнаете, с чего начать именно вам, чтобы вернуть телу лёгкость, энергию и женское здоровье.</p>
+    <ul class="q-perks"><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>1 минута</li><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="1.5"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-4-6-1.5S10 8 12 8zm0 0c2-4 6-4 6-1.5S14 8 12 8z"/></svg>Бесплатное пробное занятие</li><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-14 14-14 0 9-6 14-14 14z"/><path d="M5 19 13 11"/></svg>Мягко и без стресса</li></ul>
+    <button type="button" class="btn btn-wine q-go" data-next>Начать тест<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+  </div>
+  <div class="q-pane" data-pane="1" hidden><h3 class="q-h">Подскажите, пожалуйста, что сейчас беспокоит?</h3><p class="q-hint">Можно выбрать несколько вариантов</p><div class="q-grid q-multi"><button type="button" class="q-opt" data-v="1" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Усталость, апатия, нет энергии</span></button><button type="button" class="q-opt" data-v="2" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Боли в пояснице, шее, лопатках</span></button><button type="button" class="q-opt" data-v="3" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Лишний вес или, наоборот, сложно набрать</span></button><button type="button" class="q-opt" data-v="4" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Отёки</span></button><button type="button" class="q-opt" data-v="5" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Дряблая кожа, целлюлит</span></button><button type="button" class="q-opt" data-v="6" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Плохой сон, ночная потливость</span></button><button type="button" class="q-opt" data-v="7" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Ощущение тяжести внизу живота</span></button><button type="button" class="q-opt" data-v="8" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Подтекания при чихании, кашле или прыжках</span></button><button type="button" class="q-opt" data-v="9" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Звуки во время близости, которые смущают</span></button><button type="button" class="q-opt" data-v="10" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Живот, который не уходит даже при спорте и диетах</span></button><button type="button" class="q-opt" data-v="11" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Проблемы с гормональным фоном</span></button><button type="button" class="q-opt" data-v="12" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Снижение женского желания и удовольствия</span></button></div>
+    <div class="q-nav"><button type="button" class="btn btn-line" data-prev>Назад</button><button type="button" class="btn btn-wine q-next1" data-next disabled>Далее<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
+  <div class="q-pane" data-pane="2" hidden><h3 class="q-h">Какой у вас сейчас период?</h3><p class="q-hint">Выберите один вариант</p><div class="q-grid q-single" data-name="stage"><button type="button" class="q-opt" data-v="plan" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Планирую беременность</span></button><button type="button" class="q-opt" data-v="preg" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Я беременна</span></button><button type="button" class="q-opt" data-v="post" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Восстанавливаюсь после родов</span></button><button type="button" class="q-opt" data-v="climax" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">40+, замечаю гормональные перемены</span></button><button type="button" class="q-opt" data-v="none" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Ничего из этого</span></button></div>
+    <div class="q-nav"><button type="button" class="btn btn-line" data-prev>Назад</button></div></div>
+  <div class="q-pane" data-pane="3" hidden><h3 class="q-h">Как у вас сейчас с тренировками?</h3><p class="q-hint">Выберите один вариант</p><div class="q-grid q-single" data-name="activity"><button type="button" class="q-opt" data-v="zero" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Почти не занимаюсь</span></button><button type="button" class="q-opt" data-v="sometimes" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Иногда, но нерегулярно</span></button><button type="button" class="q-opt" data-v="regular" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Занимаюсь, но результата нет</span></button></div>
+    <div class="q-nav"><button type="button" class="btn btn-line" data-prev>Назад</button></div></div>
+  <div class="q-pane q-res" data-pane="4" hidden>
+    <p class="kick">Ваш результат</p><h3 class="q-h q-title"></h3>
+    <div class="q-text"></div>
+    <div class="q-method"><b>Как работает Метод Анны</b><ol><li><span>1</span>Выравниваем ось тела</li><li><span>2</span>Мягко укрепляем без стресса</li><li><span>3</span>Силовые — когда тело готово</li></ol></div>
+    <p class="q-about">Я — специалист по женскому здоровью, телесный терапевт и массажист. Более 14 лет работаю с женщинами — от юных девушек до бабушек. Сама прошла через лишний вес +20 кг, диастаз, недержание, головные боли и избежала операции на плечо.</p>
+    <div class="q-actions"><a class="btn btn-wine q-send" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%20%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D0%BA.%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BE%D0%BA%D0%BE%D0%B8%D1%82%3A%20" target="_blank" rel="noopener">Записаться на бесплатное пробное<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><button type="button" class="btn btn-line q-restart">Пройти заново</button></div>
+    <p class="q-small">Кнопка откроет чат со мной в Telegram — ваши ответы уже будут в сообщении.<br>Формат: канал с тренировками в записи или занятия в Zoom по расписанию. Абонемент — 3 000 ₽/месяц, есть индивидуальная работа. Присоединиться можно в любой момент.</p>
+    <p class="q-warn">Тест не заменяет консультацию врача.</p>
+  </div>
+</div>
+
+  <p class="t-foot"><a href="../">Подробнее обо мне и тренировках →</a></p>
+</main>
+<script>
+(function(){
+var root=document.querySelector('[data-quiz]');if(!root)return;
+var C=[0,'energy','back','body','body','body','energy','pelvic','pelvic','pelvic','belly','energy','pelvic'];
+var G={pelvic:{t:'мышцы тазового дна',x:'Тяжесть внизу живота, подтекания, смущающие звуки и снижение желания — частые признаки ослабленного тазового дна. Хорошая новость: это мягко и деликатно восстанавливается правильными упражнениями.'},
+belly:{t:'живот и мышцы кора',x:'Если живот не уходит даже при спорте и диетах, часто дело не в калориях, а в диастазе, осанке и работе глубоких мышц. Качать пресс здесь не нужно — нужно сначала выровнять ось тела.'},
+back:{t:'спина и осанка',x:'Боли в пояснице, шее и лопатках обычно связаны со смещением оси тела и перегрузкой одних мышц при слабости других. Начинаем с выравнивания, самомассажа и мягкой мобилизации.'},
+body:{t:'обмен веществ и лимфа',x:'Вес, отёки и дряблость кожи хорошо откликаются на регулярное движение, работу с лимфой и мягкое укрепление — без изнуряющих тренировок и жёстких диет.'},
+energy:{t:'энергия и гормональный баланс',x:'Усталость, плохой сон и гормональные качели — сигнал, что телу нужна не нагрузка «через силу», а щадящая регулярная практика, которая восстанавливает, а не истощает.'}};
+var ST={plan:'Подготовка к беременности — отличное время, чтобы укрепить тазовое дно и спину заранее.',preg:'Во время беременности занимаемся бережно, с учётом срока и самочувствия.',post:'После родов важно восстановиться правильно: сначала тазовое дно и диастаз, и только потом — нагрузка.',climax:'В период гормональных перемен регулярная мягкая практика особенно поддерживает самочувствие.',none:''};
+var AC={zero:'Начать можно с нуля — программа подстраивается под ваш уровень, а оборудование можно заменить подручным (например, банным полотенцем, скрученным в ролл).',sometimes:'Регулярность — ключ к результату. В группе с расписанием и поддержкой сестёр заниматься гораздо легче.',regular:'Если результата нет, скорее всего, нагрузка даётся раньше, чем тело к ней готово. Метод Анны выстраивает правильную последовательность.'};
+var S={step:0,sel:[],stage:null,activity:null};
+var panes=root.querySelectorAll('.q-pane'),bar=root.querySelector('.q-bar i'),lab=root.querySelector('.q-step'),next1=root.querySelector('.q-next1');
+var LBL=['Начало','Вопрос 1 из 3','Вопрос 2 из 3','Вопрос 3 из 3','Готово'];
+function go(n){S.step=n;panes.forEach(function(p){p.hidden=(+p.dataset.pane!==n)});bar.style.width=(n/4*100)+'%';lab.textContent=LBL[n];
+ var r=root.getBoundingClientRect();if(r.top<70)window.scrollTo({top:window.scrollY+r.top-90,behavior:'smooth'});}
+root.querySelectorAll('[data-next]').forEach(function(b){b.addEventListener('click',function(){go(S.step+1)})});
+root.querySelectorAll('[data-prev]').forEach(function(b){b.addEventListener('click',function(){go(S.step-1)})});
+root.querySelectorAll('.q-multi .q-opt').forEach(function(o){o.addEventListener('click',function(){var v=+o.dataset.v,i=S.sel.indexOf(v);if(i>-1)S.sel.splice(i,1);else S.sel.push(v);o.setAttribute('aria-pressed',i>-1?'false':'true');next1.disabled=!S.sel.length})});
+root.querySelectorAll('.q-single').forEach(function(g){g.querySelectorAll('.q-opt').forEach(function(o){o.addEventListener('click',function(){
+ g.querySelectorAll('.q-opt').forEach(function(x){x.setAttribute('aria-pressed','false')});o.setAttribute('aria-pressed','true');S[g.dataset.name]=o.dataset.v;
+ setTimeout(function(){if(S.step===3)result();go(S.step+1)},280)})})});
+function txt(sel){return sel?sel.querySelector('.q-t').textContent:''}
+function result(){
+ var order=['pelvic','belly','back','body','energy'],cnt={};S.sel.forEach(function(id){cnt[C[id]]=(cnt[C[id]]||0)+1});
+ var f=order.filter(function(g){return cnt[g]}).sort(function(a,b){return cnt[b]-cnt[a]}),m=f[0]||'energy';
+ root.querySelector('.q-title').textContent='Ваш главный фокус: '+G[m].t;
+ var h='<p>'+G[m].x+'</p>';
+ if(f.length>1)h+='<p>Также стоит уделить внимание: <b>'+f.slice(1).map(function(g){return G[g].t}).join(', ')+'</b>. В комплексном подходе всё это прорабатывается вместе.</p>';
+ if(ST[S.stage])h+='<p>'+ST[S.stage]+'</p>';
+ h+='<p>'+AC[S.activity]+'</p><p><b>Начните с бесплатного пробного занятия</b> — я подскажу, какой формат подойдёт именно вам.</p>';
+ root.querySelector('.q-text').innerHTML=h;
+ var list=S.sel.slice().sort(function(a,b){return a-b}).map(function(id){return '— '+txt(root.querySelector('.q-multi .q-opt[data-v="'+id+'"]'))}).join('\n');
+ var msg='Ассаляму алейкум ва рахматуЛлахи ва баракятух, Анна! Прошла тест на сайте, хочу записаться на бесплатное пробное занятие.\n\nМеня беспокоит:\n'+list+'\n\nПериод: '+txt(root.querySelector('[data-name="stage"] [aria-pressed="true"]'))+'\nТренировки: '+txt(root.querySelector('[data-name="activity"] [aria-pressed="true"]'));
+ root.querySelector('.q-send').href=root.dataset.tg+encodeURIComponent(msg);
+}
+root.querySelector('.q-restart').addEventListener('click',function(){S={step:0,sel:[],stage:null,activity:null};root.querySelectorAll('.q-opt').forEach(function(x){x.setAttribute('aria-pressed','false')});next1.disabled=true;go(0)});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Метод Анны — тренировки для женского здоровья</title>
+<meta name="description" content="Метод Анны — онлайн-тренировки от специалиста по женскому здоровью, тренера и телесного терапевта. Для сестёр: осанка, спина, тазовое дно, беременность и восстановление. Первое занятие бесплатно.">
+<link rel="icon" href="img/logo-160.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700&family=Amiri&display=swap">
+<style>
+:root{--bg:#F4EBDD;--card:#FBF6EF;--card2:#EFE2CF;--wine:#8A1C2C;--wine-d:#6A1421;--teal:#1B6E7E;--olive:#5C6A3A;--peach:#E9BFA6;--ink:#2B1D1A;--muted:#5B4842;--line:#E2D1BC;--r:24px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Montserrat',system-ui,sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--wine)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+.sec{padding:clamp(56px,8vw,104px) 0}
+.kick{margin:0 0 14px;display:inline-flex;align-items:center;gap:12px;font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--wine)}
+.kick:before{content:"";width:28px;height:2px;background:var(--wine);border-radius:2px}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:500;color:var(--ink);margin:0}
+h2{font-size:clamp(32px,4.4vw,52px);line-height:1.1;letter-spacing:-.01em}
+h2 em,h1 em{font-style:italic;color:var(--wine)}
+.lead{font-size:clamp(16px,1.4vw,18px);color:var(--muted);max-width:620px;margin:16px 0 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;transition:background .2s,color .2s,transform .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn:focus-visible,summary:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.btn-wine{background:var(--wine);color:#FFF8F0} .btn-wine:hover{background:var(--wine-d);color:#fff}
+.btn-line{border:1.5px solid var(--wine);color:var(--wine);background:transparent} .btn-line:hover{background:var(--wine);color:#FFF8F0}
+.btn-cream{background:#FBF6EF;color:var(--wine)} .btn-cream:hover{background:#fff}
+/* header */
+.hdr{position:sticky;top:0;z-index:20;background:rgba(244,235,221,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.brand img{width:52px;height:52px;aspect-ratio:1}
+.brand b{display:block;font-family:'Playfair Display',serif;font-weight:600;font-size:20px;line-height:1.1;color:var(--wine)}
+.brand small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.nav{display:flex;gap:26px}
+.nav a{text-decoration:none;color:var(--ink);font-size:14px;font-weight:500}
+.nav a:hover{color:var(--wine)}
+.hdr .btn{min-height:46px;padding:10px 20px;font-size:14px}
+@media (max-width:980px){.nav{display:none}}
+.hdr-btn .short{display:none} @media (max-width:600px){.hdr-btn .long{display:none}.hdr-btn .short{display:inline}.hdr .wrap{min-height:66px}.brand img{width:44px;height:44px}.brand b{font-size:18px}} @media (max-width:420px){.brand small{display:none}.hdr .btn{padding:10px 18px;font-size:13.5px;min-height:42px}}
+/* hero */
+.hero{position:relative;overflow:hidden;color:#FBEFE6;background:radial-gradient(ellipse 70% 80% at 78% 40%,#A82A3D 0%,#7E1727 38%,#4A0C17 100%)}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 110%,rgba(233,191,166,.18),transparent 45%);pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:clamp(32px,5vw,72px);padding-top:clamp(56px,8vw,110px);padding-bottom:clamp(64px,8vw,120px)}
+.hero .kick{color:#F2C9B8} .hero .kick:before{background:#F2C9B8}
+.hero h1{font-size:clamp(40px,5.6vw,76px);line-height:1.02;letter-spacing:-.02em;color:#FFF8F0}
+.hero h1 em{color:#F2C9B8}
+.hero .lead{color:#F1D9CF;margin-top:24px;max-width:540px}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.btn-ghost{border:1.5px solid rgba(251,239,230,.55);color:#FFF8F0;background:transparent} .btn-ghost:hover{background:rgba(251,239,230,.12);color:#fff}
+.hero .btn-cream{box-shadow:0 14px 30px -12px rgba(0,0,0,.45)}
+.stats{display:flex;flex-wrap:wrap;gap:0;margin:44px 0 0;padding-top:26px;border-top:1px solid rgba(251,239,230,.2)}
+.stats div{padding:0 26px;border-left:1px solid rgba(251,239,230,.2)} .stats div:first-child{padding-left:0;border-left:0}
+.stats dt{font-family:'Playfair Display',serif;font-size:clamp(28px,3vw,38px);line-height:1;color:#FFF8F0}
+.stats dd{margin:8px 0 0;font-size:13px;line-height:1.35;color:#E8C3B6}
+.medal{position:relative;justify-self:center;width:min(100%,500px);aspect-ratio:1;display:grid;place-items:center}
+.ring{position:absolute;inset:0;width:100%;height:100%;animation:spin 60s linear infinite}
+.ring text{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:600;fill:#F2C9B8}
+@keyframes spin{to{transform:rotate(360deg)}}
+.medal-img{position:relative;width:76%;height:auto;aspect-ratio:1;border-radius:50%;box-shadow:0 0 0 10px rgba(251,239,230,.08),0 0 0 11px rgba(242,201,184,.35),0 40px 80px -20px rgba(20,2,6,.7),0 0 120px rgba(242,201,184,.25)}
+.float{position:absolute;display:flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;background:#FBF6EF;color:var(--ink);font-size:14px;font-weight:600;box-shadow:0 18px 36px -14px rgba(20,2,6,.6);animation:bob 6s ease-in-out infinite}
+.float svg{color:var(--wine)}
+.f1{left:-2%;bottom:16%} .f2{right:-4%;top:12%;animation-delay:-3s}
+@keyframes bob{50%{transform:translateY(-8px)}}
+.hero-leaf{position:absolute;width:120px;opacity:.5;pointer-events:none}
+.l1{left:-26px;top:40px;transform:rotate(-18deg)} .l2{right:44%;bottom:-70px;transform:rotate(24deg);width:96px;opacity:.35}
+@media (prefers-reduced-motion:reduce){.ring,.float{animation:none}}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}.medal{width:min(92%,420px)}.f1{left:0}.f2{right:0}.l2{display:none}}
+@media (max-width:480px){.stats div{padding:0 14px}.float{font-size:12.5px;padding:10px 14px}.hero-btns .btn{width:100%}}
+.trust-sec{position:relative;margin-top:-34px;z-index:2}
+/* trust */
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.trust div{display:flex;align-items:center;gap:12px;padding:18px;background:var(--card);border-radius:18px;box-shadow:0 18px 40px -26px rgba(74,12,23,.55);font-size:14px;font-weight:500;line-height:1.35}
+.trust svg{flex:none;color:var(--teal)}
+@media (max-width:860px){.trust{grid-template-columns:1fr 1fr}}
+@media (max-width:420px){.trust div{padding:14px;font-size:13px;flex-direction:column;align-items:flex-start;gap:8px}}
+/* worries */
+.worry{background:var(--card);border-radius:32px;padding:clamp(28px,5vw,64px)}
+.chips{list-style:none;margin:32px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:10px}
+.chip{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:#FFFCF7;font-size:15px;line-height:1.4}
+.chip-dot{flex:none;width:10px;height:10px;margin-top:5px;border-radius:50%;background:var(--wine)}
+.chip:nth-child(3n+2) .chip-dot{background:var(--teal)} .chip:nth-child(3n) .chip-dot{background:var(--olive)}
+.worry-cta{margin-top:30px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:26px;border-top:1px solid var(--line)}
+.worry-cta p{margin:0;font-family:'Playfair Display',serif;font-size:clamp(20px,2.2vw,26px);line-height:1.3}
+/* quiz */
+.quiz{margin-top:30px;background:#FFFCF7;border:1px solid var(--line);border-radius:28px;padding:clamp(20px,3.4vw,40px)}
+.q-top{display:flex;align-items:center;gap:16px}
+.q-step{flex:none;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--wine)}
+.q-bar{flex:1;height:6px;border-radius:6px;background:#EADBC8;overflow:hidden}
+.q-bar i{display:block;height:100%;width:33%;border-radius:6px;background:linear-gradient(90deg,var(--wine),#C2475A);transition:width .4s}
+.q-pane{margin-top:22px;animation:qIn .35s ease}
+@keyframes qIn{from{opacity:0;transform:translateY(8px)}}
+.q-h{font-size:clamp(24px,2.6vw,32px)}
+.q-hint{margin:6px 0 0;color:var(--muted);font-size:14px}
+.q-grid{margin-top:20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:10px}
+.q-opt{display:flex;align-items:center;gap:12px;width:100%;min-height:56px;padding:12px 16px;border:1.5px solid var(--line);border-radius:16px;background:#fff;color:var(--ink);font:inherit;font-size:15px;font-weight:500;line-height:1.35;text-align:left;cursor:pointer;transition:border-color .2s,background .2s}
+.q-opt:hover{border-color:#C9A58F}
+.q-opt:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.q-box{flex:none;width:24px;height:24px;border-radius:8px;border:1.5px solid #CBB29C;display:grid;place-items:center;color:transparent;transition:all .2s}
+
+.q-opt[aria-pressed="true"]{border-color:var(--wine);background:#FBEFEA}
+.q-opt[aria-pressed="true"] .q-box{background:var(--wine);border-color:var(--wine);color:#fff}
+.q-hello{text-align:center;padding:10px 0 6px} .q-salam{margin:0 0 6px;font-family:'Amiri',serif;font-size:clamp(22px,2.4vw,28px);color:var(--olive)} .q-lead{max-width:520px;margin:12px auto 0;color:var(--muted)} .q-perks{list-style:none;margin:20px 0 26px;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px} .q-perks li{display:flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;background:var(--card2);font-size:14px;font-weight:600} .q-perks svg{color:var(--wine)} .q-text p{margin:14px 0 0;line-height:1.65} .q-text b{color:var(--wine)} .q-text p:first-child{padding:16px 18px;border-radius:18px;background:var(--card2);margin-top:16px} .q-method{margin-top:20px;padding:18px;border-radius:20px;background:#1B6E7E;color:#F2FAFB} .q-method b{display:block;font-family:'Playfair Display',serif;font-weight:500;font-size:20px;text-align:center} .q-method ol{list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;text-align:center;font-size:13.5px;line-height:1.35} .q-method span{display:grid;place-items:center;width:32px;height:32px;margin:0 auto 6px;border-radius:50%;background:#FBF6EF;color:#1B6E7E;font-weight:700} .q-about{margin:16px 0 0;font-size:14.5px;color:var(--muted);line-height:1.6} .q-method li{min-width:0} @media (max-width:560px){.q-method ol{grid-template-columns:1fr;text-align:left} .q-method li{display:flex;align-items:center;gap:12px} .q-method span{margin:0;flex:none}} .q-small{margin:16px 0 0;font-size:13px;color:var(--muted);line-height:1.5} .q-warn{margin:8px 0 0;font-size:12px;color:#8A7A74} .q-nav{margin-top:24px;display:flex;justify-content:space-between;gap:12px}
+.q-nav [data-next]{margin-left:auto}
+.btn[disabled]{opacity:.4;cursor:not-allowed;transform:none}
+.q-dirs{margin-top:18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px}
+.q-dir{display:flex;gap:14px;align-items:center;padding:16px;border-radius:20px;background:var(--card2)}
+.q-dir .dir-ill{flex:none;width:72px;margin:0}
+.q-dir b{display:block;font-family:'Playfair Display',serif;font-weight:500;font-size:21px;line-height:1.2}
+.q-dir span{display:block;margin-top:4px;font-size:14px;line-height:1.45;color:var(--muted)}
+.q-fmt{margin:18px 0 0;font-size:16px} .q-fmt b{color:var(--wine)}
+.q-note{margin:14px 0 0;display:flex;gap:10px;align-items:flex-start;padding:14px 16px;border-radius:16px;background:#E6EADB;color:#3E4824;font-size:14.5px;line-height:1.5}
+.q-note svg{flex:none;margin-top:2px}
+.q-actions{margin-top:22px;display:flex;flex-wrap:wrap;gap:12px}
+@media (max-width:480px){.q-actions .btn,.q-nav .btn{flex:1}}
+/* directions */
+.dirs{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
+.dir{background:var(--card);border-radius:var(--r);padding:22px 22px 26px;display:flex;flex-direction:column;gap:10px}
+.dir-ill{width:72%;max-width:180px;aspect-ratio:1;margin:4px auto 10px;filter:drop-shadow(0 14px 18px rgba(106,20,33,.16))} .dir-ill svg{display:block;width:100%;height:100%}
+.dir h3{font-size:24px}
+.dir p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.55}
+@media (max-width:980px){.dirs{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.dirs{grid-template-columns:1fr}.dir{flex-direction:row;flex-wrap:wrap;align-items:center}.dir-ill{width:96px;margin:0}.dir h3{flex:1}.dir p{flex-basis:100%}}
+/* method */
+.steps{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:s}
+.steps li{position:relative;background:var(--card);border-radius:var(--r);padding:28px 26px}
+.steps li:before{counter-increment:s;content:"0" counter(s);font-family:'Playfair Display',serif;font-style:italic;font-size:44px;line-height:1;color:var(--peach)}
+.steps h3{font-size:24px;margin:14px 0 8px}
+.steps p{margin:0;color:var(--muted);font-size:15px}
+.self{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}
+.self span{padding:9px 16px;border-radius:999px;background:#E3EDE9;color:#13525E;font-size:14px;font-weight:600}
+@media (max-width:760px){.steps{grid-template-columns:1fr}}
+/* about */
+.about{display:grid;grid-template-columns:1fr 1.05fr;gap:18px;margin-top:40px}
+.about-q{background:var(--wine);color:#FBEFE6;border-radius:var(--r);padding:clamp(28px,4vw,48px);position:relative;overflow:hidden}
+.about-q .big{font-family:'Playfair Display',serif;font-size:clamp(64px,8vw,96px);line-height:.9;color:#FBF6EF}
+.about-q .big small{display:block;font-family:'Montserrat',sans-serif;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#F2C9B8;margin-top:10px}
+.about-q blockquote{margin:28px 0 0;font-size:clamp(16px,1.5vw,18px);line-height:1.75;color:#FBEFE6} .about-q blockquote:before{content:'“';display:block;font-family:'Playfair Display',serif;font-size:64px;line-height:.5;color:#F2C9B8;margin-bottom:14px}
+.about-q img{position:absolute;right:-30px;top:-30px;width:150px;opacity:.16}
+.about-l{background:var(--card);border-radius:var(--r);padding:clamp(28px,4vw,48px)}
+.about-l h3{font-size:30px}
+.about-l .role{margin:6px 0 22px;color:var(--muted)}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px} .fact{background:#FFFCF7;border:1px solid var(--line);border-radius:18px;padding:18px 18px 16px;display:flex;flex-direction:column;gap:4px} .fact b{font-family:'Playfair Display',serif;font-weight:500;font-size:34px;line-height:1;color:var(--wine)} .fact span{font-size:14px;line-height:1.4;color:var(--muted)} .about-note{margin:18px 0 0;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:15px} .checks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+.checks li{display:flex;gap:12px;align-items:flex-start;line-height:1.45}
+.checks svg{flex:none;color:var(--teal);margin-top:1px}
+@media (max-width:860px){.about{grid-template-columns:1fr}}
+/* formats */
+.trial{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:10px 18px;border-radius:999px;background:#E6EADB;color:#45502A;font-weight:600;font-size:14px}
+.fmts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.fmt{background:var(--card);border-radius:var(--r);padding:30px 26px;display:flex;flex-direction:column;gap:12px;border:1.5px solid transparent}
+.fmt.hl{border-color:var(--wine)}
+.fmt-ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:#F3E3D8;color:var(--wine)}
+.fmt h3{font-size:25px}
+.fmt p{margin:0;color:var(--muted);font-size:15px}
+.price{margin-top:auto;padding-top:16px;border-top:1px solid var(--line);font-family:'Playfair Display',serif;font-size:34px;line-height:1.1;color:var(--ink)}
+.price small{font-family:'Montserrat',sans-serif;font-size:14px;color:var(--muted)}
+.fmt .btn{margin-top:8px}
+.note{margin:20px 0 0;color:var(--muted);font-size:15px}
+@media (max-width:900px){.fmts{grid-template-columns:1fr}}
+/* edu */
+.edu{background:var(--wine);color:#FBEFE6;border-radius:32px;padding:clamp(32px,6vw,72px);display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(24px,5vw,64px);align-items:center;position:relative;overflow:hidden}
+.edu .kick{color:#F2C9B8} .edu .kick:before{background:#F2C9B8}
+.edu h2{color:#FFF8F0} .edu h2 em{color:#F2C9B8}
+.edu p{color:#F3DDD3;margin:18px 0 0;font-size:16.5px}
+.edu ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.edu li{display:flex;gap:12px;align-items:center;background:rgba(255,248,240,.08);border:1px solid rgba(255,248,240,.18);border-radius:16px;padding:14px 16px;font-weight:500}
+.edu li svg{flex:none;color:#F2C9B8}
+.edu .btn{margin-top:28px}
+@media (max-width:860px){.edu{grid-template-columns:1fr}}
+/* reviews */
+.revs{columns:3 300px;column-gap:18px;margin-top:40px}
+.rev{break-inside:avoid;margin:0 0 18px;background:var(--card);border-radius:var(--r);padding:26px 24px 22px;position:relative}
+.rev-q{font-family:'Playfair Display',serif;font-size:64px;line-height:.6;color:var(--peach);display:block;height:26px}
+.rev blockquote{margin:0;font-size:15.5px;line-height:1.6}
+.rev figcaption{margin-top:16px;display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;color:var(--muted)}
+.rev-av{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#F3E3D8;color:var(--wine)}
+.feat{background:var(--card2);border-radius:32px;padding:clamp(28px,5vw,56px);margin-top:40px;display:grid;grid-template-columns:auto 1fr;gap:clamp(18px,3vw,36px)}
+.feat .n{font-family:'Playfair Display',serif;font-size:clamp(56px,7vw,88px);line-height:.9;color:var(--wine)}
+.feat .n small{display:block;font-family:'Montserrat',sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+.feat blockquote{margin:0;font-size:clamp(15.5px,1.4vw,17px);line-height:1.75}
+.feat blockquote p{margin:0 0 12px}
+.feat figcaption{margin-top:8px;font-size:13px;font-weight:600;color:var(--muted)}
+@media (max-width:640px){.feat{grid-template-columns:1fr}}
+.quick{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.quick li{padding:12px 18px;border-radius:999px 999px 999px 6px;background:#FFFCF7;border:1px solid var(--line);font-size:14.5px;line-height:1.4}
+/* carousel */
+.car{margin-top:32px}
+.car-track{display:flex;align-items:flex-start;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;margin:0 calc(-1*clamp(16px,4vw,40px));padding:6px clamp(16px,4vw,40px) 14px;scroll-padding:0 clamp(16px,4vw,40px)}
+.car-track::-webkit-scrollbar{display:none}
+.car-track:focus-visible{outline:3px solid var(--teal);outline-offset:2px;border-radius:12px}
+.slide{flex:0 0 min(84%,380px);scroll-snap-align:start;margin:0;background:var(--card);border-radius:var(--r);padding:26px 24px 22px;display:flex;flex-direction:column;box-shadow:0 18px 40px -30px rgba(74,12,23,.5)}
+.slide-big{flex-basis:min(88%,520px);background:var(--card2)}
+.slide blockquote{margin:0;font-size:16px;line-height:1.65}
+.slide blockquote p{margin:0 0 12px} .slide blockquote p:last-child{margin:0}
+.slide figcaption{margin-top:18px;display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;color:var(--muted)}
+.slide-tag{align-self:flex-start;margin-bottom:14px;padding:6px 14px;border-radius:999px;background:var(--wine);color:#FFF8F0;font-size:12px;font-weight:600;letter-spacing:.06em}
+.slide-chips ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;flex:1}
+.slide-chips li{padding:14px 16px;border-radius:18px 18px 18px 6px;background:#FFFCF7;border:1px solid var(--line);font-size:15px;line-height:1.45}
+.car-nav{margin-top:18px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.car-dots{display:flex;flex-wrap:wrap;gap:8px}
+.car-dot{width:10px;height:10px;padding:0;border:0;border-radius:999px;background:#D9C3AE;cursor:pointer;transition:width .25s,background .25s}
+.car-dot[aria-selected="true"]{width:28px;background:var(--wine)}
+.car-btns{display:flex;gap:10px}
+.car-btn{width:52px;height:52px;border-radius:50%;border:1.5px solid var(--wine);background:transparent;color:var(--wine);display:grid;place-items:center;cursor:pointer;transition:background .2s,color .2s}
+.car-btn:hover,.car-next{background:var(--wine);color:#FFF8F0}
+.car-btn:focus-visible,.car-dot:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.car-btn[disabled]{opacity:.35;cursor:default}
+/* path */
+.path{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.path li{text-align:center;padding:0 6px;position:relative}
+.path .dot{width:64px;height:64px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;background:var(--card);border:1.5px solid var(--line);color:var(--wine);font-family:'Playfair Display',serif;font-size:22px}
+.path li:not(:last-child):after{content:"";position:absolute;top:32px;left:calc(50% + 40px);right:calc(-50% + 40px);height:1.5px;background:repeating-linear-gradient(90deg,var(--peach) 0 6px,transparent 6px 12px)}
+.path h3{font-size:19px;margin-bottom:6px}
+.path p{margin:0;font-size:14px;color:var(--muted);line-height:1.45}
+@media (max-width:860px){.path{grid-template-columns:1fr;gap:10px}.path li{display:grid;grid-template-columns:64px 1fr;gap:16px;text-align:left;align-items:center;background:var(--card);border-radius:18px;padding:14px}.path .dot{margin:0;background:#F3E3D8;border:0}.path li:after{display:none}}
+/* faq */
+.faqs{margin-top:36px;display:flex;flex-direction:column;gap:12px;max-width:880px}
+.faq{background:var(--card);border-radius:20px;padding:0 24px}
+.faq summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 0;font-family:'Playfair Display',serif;font-size:clamp(18px,1.8vw,21px);line-height:1.3}
+.faq summary::-webkit-details-marker{display:none}
+.faq-i{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#F3E3D8;color:var(--wine);transition:transform .25s}
+.faq[open] .faq-i{transform:rotate(45deg)}
+.faq p{margin:0 0 22px;color:var(--muted);max-width:720px}
+/* cta */
+.cta{background:var(--card2);border-radius:32px;padding:clamp(32px,6vw,72px);display:grid;grid-template-columns:auto 1fr auto;gap:clamp(20px,4vw,48px);align-items:center}
+.cta img{width:clamp(120px,14vw,170px);height:auto;aspect-ratio:1}
+.cta h2{font-size:clamp(28px,3.6vw,44px)}
+.cta p{margin:12px 0 0;color:var(--muted)}
+@media (max-width:860px){.cta{grid-template-columns:1fr;text-align:center;justify-items:center}}
+/* footer */
+.ftr{padding:40px 0 48px;border-top:1px solid var(--line);margin-top:clamp(56px,8vw,104px)}
+.ftr .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
+.ftr nav{display:flex;flex-wrap:wrap;gap:8px 22px}
+.ftr nav a{color:var(--muted);text-decoration:none;font-size:14px}
+.ftr nav a:hover{color:var(--wine)}
+.ftr small{color:var(--muted);font-size:13px}
+.ftr .tg{display:inline-flex;align-items:center;gap:8px;font-weight:600;text-decoration:none}
+</style>
+</head>
+<body>
+<header class="hdr"><div class="wrap">
+  <a class="brand" href="#top"><img src="img/logo-160.png" alt="" width="52" height="52"><span><b>Метод Анны</b><small>женское здоровье</small></span></a>
+  <nav class="nav" aria-label="Меню"><a href="#method">О методе</a><a href="#dirs">Направления</a><a href="#formats">Форматы</a><a href="#edu">Обучение тренеров</a><a href="#reviews">Отзывы</a><a href="#faq">Вопросы</a></nav>
+  <a class="btn btn-wine hdr-btn" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BD%D0%BE%D0%B5%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5." target="_blank" rel="noopener"><span class="long">Пробное занятие</span><span class="short">Записаться</span></a>
+</div></header>
+
+<main id="top">
+<section class="hero">
+  <svg class="hero-leaf l1" viewBox="0 0 120 260" aria-hidden="true"><g fill="#7E8C55" stroke="#4E5A30" stroke-width="1"><path d="M60 255 Q66 150 58 10" fill="none" stroke-width="2"/><path d="M58 230 q-30 -14 -44 -2 q--14 18 --44 2z"/><path d="M62 204 q30 -14 44 -2 q-14 18 -44 2z"/><path d="M58 178 q-30 -14 -44 -2 q--14 18 --44 2z"/><path d="M62 152 q30 -14 44 -2 q-14 18 -44 2z"/><path d="M58 126 q-30 -14 -44 -2 q--14 18 --44 2z"/><path d="M62 100 q30 -14 44 -2 q-14 18 -44 2z"/><path d="M58 74 q-30 -14 -44 -2 q--14 18 --44 2z"/><path d="M62 48 q30 -14 44 -2 q-14 18 -44 2z"/><path d="M58 12 q8 -14 0 -26 q-8 12 0 26z"/></g></svg>
+  <svg class="hero-leaf l2" viewBox="0 0 120 260" aria-hidden="true"><g fill="#7E8C55" stroke="#4E5A30" stroke-width="1"><path d="M60 255 Q66 150 58 10" fill="none" stroke-width="2"/><path d="M58 230 q-30 -14 -44 -2 q--14 18 --44 2z"/><path d="M62 204 q30 -14 44 -2 q-14 18 -44 2z"/><path d="M58 178 q-30 -14 -44 -2 q--14 18 --44 2z"/><path d="M62 152 q30 -14 44 -2 q-14 18 -44 2z"/><path d="M58 126 q-30 -14 -44 -2 q--14 18 --44 2z"/><path d="M62 100 q30 -14 44 -2 q-14 18 -44 2z"/><path d="M58 74 q-30 -14 -44 -2 q--14 18 --44 2z"/><path d="M62 48 q30 -14 44 -2 q-14 18 -44 2z"/><path d="M58 12 q8 -14 0 -26 q-8 12 0 26z"/></g></svg>
+  <div class="wrap hero-grid">
+    <div class="hero-txt">
+      <p class="kick">Женское здоровье · онлайн</p>
+      <h1>Тело без боли — <em>мягко, регулярно</em> и с&nbsp;заботой о&nbsp;себе</h1>
+      <p class="lead">Тренировки для сестёр любого возраста: осанка и спина, тазовое дно, подготовка к беременности и восстановление после родов. Сначала выравниваем ось тела, потом мягко укрепляем — без стресса.</p>
+      <div class="hero-btns"><a class="btn btn-cream" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BD%D0%BE%D0%B5%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5." target="_blank" rel="noopener">Бесплатное пробное занятие<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-ghost" href="#worry">Что вас беспокоит?</a></div>
+      <dl class="stats">
+        <div><dt>14+</dt><dd>лет работы<br>с женщинами</dd></div>
+        <div><dt>3 + 1</dt><dd>женские группы<br>и детская</dd></div>
+        <div><dt>0 ₽</dt><dd>первое<br>занятие</dd></div>
+      </dl>
+    </div>
+    <div class="medal">
+      <svg class="ring" viewBox="0 0 400 400" aria-hidden="true"><defs><path id="rp" d="M200,200 m-176,0 a176,176 0 1,1 352,0 a176,176 0 1,1 -352,0"/></defs><text><textPath href="#rp" textLength="1100" lengthAdjust="spacing">МЕТОД АННЫ ✦ ЖЕНСКОЕ ЗДОРОВЬЕ ✦ ТЕЛО БЕЗ БОЛИ ✦ МЕТОД АННЫ ✦ ЖЕНСКОЕ ЗДОРОВЬЕ ✦ ТЕЛО БЕЗ БОЛИ ✦</textPath></text></svg>
+      <img class="medal-img" src="img/hero-circle.png" alt="Коврик для йоги, фитбол и фитнес-резинка — иллюстрация из логотипа «Метод Анны»" width="600" height="600">
+      <div class="float f1"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="1.5"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-4-6-1.5S10 8 12 8zm0 0c2-4 6-4 6-1.5S14 8 12 8z"/></svg>Первое занятие бесплатно</div>
+      <div class="float f2"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>Для сестёр любого возраста</div>
+    </div>
+  </div>
+</section>
+<section class="trust-sec"><div class="wrap">
+  <div class="trust">
+    <div><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-14 14-14 0 9-6 14-14 14z"/><path d="M5 19 13 11"/></svg>Специалист по женскому здоровью</div>
+    <div><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M9 6h6M8.5 10h7M9 14h6M9.5 18h5"/></svg>Телесный терапевт и массажист</div>
+    <div><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="1.5"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-4-6-1.5S10 8 12 8zm0 0c2-4 6-4 6-1.5S14 8 12 8z"/></svg>Первое занятие бесплатно</div>
+    <div><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>Можно начать в любой момент</div>
+  </div>
+</div></section>
+
+<section class="sec" id="worry"><div class="wrap">
+  <div class="worry">
+    <p class="kick">Тест · 1 минута</p>
+    <h2>Какая программа подходит <em>именно вам?</em></h2>
+    <p class="lead">Многое из этого я прошла сама — и знаю, что телу можно помочь. Пройдите тест и узнайте, с чего начать.</p>
+    <div class="quiz" data-quiz data-tg="https://t.me/annanaryadchicova?text=">
+  <div class="q-top"><span class="q-step" aria-live="polite">Начало</span><div class="q-bar" aria-hidden="true"><i></i></div></div>
+  <div class="q-pane q-hello" data-pane="0">
+    <p class="q-salam" lang="ar" dir="rtl">السلام عليكم ورحمة الله وبركاته</p>
+    <h3 class="q-h">Ассаляму алейкум, сестра!</h3>
+    <p class="q-lead">Ответьте на 3 коротких вопроса — и узнаете, с чего начать именно вам, чтобы вернуть телу лёгкость, энергию и женское здоровье.</p>
+    <ul class="q-perks"><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>1 минута</li><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="1.5"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-4-6-1.5S10 8 12 8zm0 0c2-4 6-4 6-1.5S14 8 12 8z"/></svg>Бесплатное пробное занятие</li><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-14 14-14 0 9-6 14-14 14z"/><path d="M5 19 13 11"/></svg>Мягко и без стресса</li></ul>
+    <button type="button" class="btn btn-wine q-go" data-next>Начать тест<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+  </div>
+  <div class="q-pane" data-pane="1" hidden><h3 class="q-h">Подскажите, пожалуйста, что сейчас беспокоит?</h3><p class="q-hint">Можно выбрать несколько вариантов</p><div class="q-grid q-multi"><button type="button" class="q-opt" data-v="1" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Усталость, апатия, нет энергии</span></button><button type="button" class="q-opt" data-v="2" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Боли в пояснице, шее, лопатках</span></button><button type="button" class="q-opt" data-v="3" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Лишний вес или, наоборот, сложно набрать</span></button><button type="button" class="q-opt" data-v="4" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Отёки</span></button><button type="button" class="q-opt" data-v="5" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Дряблая кожа, целлюлит</span></button><button type="button" class="q-opt" data-v="6" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Плохой сон, ночная потливость</span></button><button type="button" class="q-opt" data-v="7" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Ощущение тяжести внизу живота</span></button><button type="button" class="q-opt" data-v="8" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Подтекания при чихании, кашле или прыжках</span></button><button type="button" class="q-opt" data-v="9" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Звуки во время близости, которые смущают</span></button><button type="button" class="q-opt" data-v="10" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Живот, который не уходит даже при спорте и диетах</span></button><button type="button" class="q-opt" data-v="11" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Проблемы с гормональным фоном</span></button><button type="button" class="q-opt" data-v="12" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Снижение женского желания и удовольствия</span></button></div>
+    <div class="q-nav"><button type="button" class="btn btn-line" data-prev>Назад</button><button type="button" class="btn btn-wine q-next1" data-next disabled>Далее<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
+  <div class="q-pane" data-pane="2" hidden><h3 class="q-h">Какой у вас сейчас период?</h3><p class="q-hint">Выберите один вариант</p><div class="q-grid q-single" data-name="stage"><button type="button" class="q-opt" data-v="plan" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Планирую беременность</span></button><button type="button" class="q-opt" data-v="preg" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Я беременна</span></button><button type="button" class="q-opt" data-v="post" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Восстанавливаюсь после родов</span></button><button type="button" class="q-opt" data-v="climax" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">40+, замечаю гормональные перемены</span></button><button type="button" class="q-opt" data-v="none" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Ничего из этого</span></button></div>
+    <div class="q-nav"><button type="button" class="btn btn-line" data-prev>Назад</button></div></div>
+  <div class="q-pane" data-pane="3" hidden><h3 class="q-h">Как у вас сейчас с тренировками?</h3><p class="q-hint">Выберите один вариант</p><div class="q-grid q-single" data-name="activity"><button type="button" class="q-opt" data-v="zero" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Почти не занимаюсь</span></button><button type="button" class="q-opt" data-v="sometimes" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Иногда, но нерегулярно</span></button><button type="button" class="q-opt" data-v="regular" aria-pressed="false"><span class="q-box" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="q-t">Занимаюсь, но результата нет</span></button></div>
+    <div class="q-nav"><button type="button" class="btn btn-line" data-prev>Назад</button></div></div>
+  <div class="q-pane q-res" data-pane="4" hidden>
+    <p class="kick">Ваш результат</p><h3 class="q-h q-title"></h3>
+    <div class="q-text"></div>
+    <div class="q-method"><b>Как работает Метод Анны</b><ol><li><span>1</span>Выравниваем ось тела</li><li><span>2</span>Мягко укрепляем без стресса</li><li><span>3</span>Силовые — когда тело готово</li></ol></div>
+    <p class="q-about">Я — специалист по женскому здоровью, телесный терапевт и массажист. Более 14 лет работаю с женщинами — от юных девушек до бабушек. Сама прошла через лишний вес +20 кг, диастаз, недержание, головные боли и избежала операции на плечо.</p>
+    <div class="q-actions"><a class="btn btn-wine q-send" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%20%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D0%BA.%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BE%D0%BA%D0%BE%D0%B8%D1%82%3A%20" target="_blank" rel="noopener">Записаться на бесплатное пробное<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><button type="button" class="btn btn-line q-restart">Пройти заново</button></div>
+    <p class="q-small">Кнопка откроет чат со мной в Telegram — ваши ответы уже будут в сообщении.<br>Формат: канал с тренировками в записи или занятия в Zoom по расписанию. Абонемент — 3 000 ₽/месяц, есть индивидуальная работа. Присоединиться можно в любой момент.</p>
+    <p class="q-warn">Тест не заменяет консультацию врача.</p>
+  </div>
+</div>
+    <noscript><p>Напишите мне, что беспокоит: <a href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%20%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D0%BA.%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BE%D0%BA%D0%BE%D0%B8%D1%82%3A%20">@annanaryadchicova</a></p></noscript>
+  </div>
+</div></section>
+
+<section class="sec" id="dirs" style="padding-top:0"><div class="wrap">
+  <p class="kick">Направления</p>
+  <h2>С чем я <em>работаю</em></h2>
+  <p class="lead">Для женщин любого возраста — от молоденьких девочек до бабушек.</p>
+  <div class="dirs"><article class="dir"><div class="dir-ill"><svg viewBox="0 0 200 200" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<radialGradient id="abg" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#F8E4D3"/><stop offset=".7" stop-color="#EDC8B0"/><stop offset="1" stop-color="#E2B094"/></radialGradient>
+<filter id="atx" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="4" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 .45  0 0 0 0 .28  0 0 0 0 .2  0 0 0 .14 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+<clipPath id="ac"><circle cx="100" cy="100" r="100"/></clipPath>
+</defs>
+<g clip-path="url(#ac)"><circle cx="100" cy="100" r="100" fill="url(#abg)"/><defs><radialGradient id="aball" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#7CC6D2"/><stop offset=".35" stop-color="#2A8C9E"/><stop offset="1" stop-color="#114C58"/></radialGradient>
+<linearGradient id="ah" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C2475A"/><stop offset="1" stop-color="#8A1C2C"/></linearGradient></defs>
+<ellipse cx="102" cy="164" rx="56" ry="9" fill="#9E6E5A" opacity=".28"/>
+<g transform="translate(36 176) rotate(-30) scale(1.25)"><path d="M0 0 Q2 -32 0 -66" stroke="#4E5A30" stroke-width="1.6" fill="none"/><path d="M0 -14 q10 -6 18 -2 q-8 8 -18 2z" fill="#6E7B4A" transform="rotate(-18 0 -14)" stroke="#4E5A30" stroke-width=".6"/><path d="M0 -28 q10 -6 18 -2 q-8 8 -18 2z" fill="#6E7B4A" transform="rotate(198 0 -28)" stroke="#4E5A30" stroke-width=".6"/><path d="M0 -42 q10 -6 18 -2 q-8 8 -18 2z" fill="#6E7B4A" transform="rotate(-18 0 -42)" stroke="#4E5A30" stroke-width=".6"/><path d="M0 -56 q10 -6 18 -2 q-8 8 -18 2z" fill="#6E7B4A" transform="rotate(198 0 -56)" stroke="#4E5A30" stroke-width=".6"/><path d="M0 -66 q4 -10 0 -18 q-4 8 0 18z" fill="#6E7B4A" stroke="#4E5A30" stroke-width=".6"/></g>
+<circle cx="104" cy="106" r="56" fill="url(#aball)"/>
+<path d="M52 92 Q104 70 158 98" stroke="#fff" stroke-opacity=".28" stroke-width="1.6" fill="none"/>
+<path d="M50 112 Q104 92 160 118" stroke="#fff" stroke-opacity=".22" stroke-width="1.6" fill="none"/>
+<path d="M58 134 Q104 116 152 140" stroke="#fff" stroke-opacity=".16" stroke-width="1.6" fill="none"/>
+<path d="M104 50 Q86 106 104 162" stroke="#fff" stroke-opacity=".14" stroke-width="1.4" fill="none"/>
+<ellipse cx="82" cy="76" rx="14" ry="8" fill="#fff" opacity=".35" transform="rotate(-30 82 76)"/>
+<path d="M150 40 c-6 -9 -20 -4 -16 7 c2 6 16 15 16 15 s14 -9 16 -15 c4 -11 -10 -16 -16 -7z" fill="url(#ah)"/>
+<path d="M144 44 c2 -3 6 -3 8 0" stroke="#fff" stroke-opacity=".5" stroke-width="1.5" fill="none" stroke-linecap="round"/><rect width="200" height="200" fill="#fff" filter="url(#atx)"/></g>
+</svg></div><h3>Беременность</h3><p>Подготовка к беременности, мягкие тренировки во время беременности и восстановление после родов.</p></article><article class="dir"><div class="dir-ill"><svg viewBox="0 0 200 200" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<radialGradient id="bbg" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#F8E4D3"/><stop offset=".7" stop-color="#EDC8B0"/><stop offset="1" stop-color="#E2B094"/></radialGradient>
+<filter id="btx" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="4" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 .45  0 0 0 0 .28  0 0 0 0 .2  0 0 0 .14 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+<clipPath id="bc"><circle cx="100" cy="100" r="100"/></clipPath>
+</defs>
+<g clip-path="url(#bc)"><circle cx="100" cy="100" r="100" fill="url(#bbg)"/><defs><linearGradient id="bbone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF6EC"/><stop offset="1" stop-color="#EFD9C2"/></linearGradient></defs>
+<g transform="translate(156 184) rotate(16) scale(1.25)"><path d="M0 0 Q2 -32 0 -66" stroke="#4E5A30" stroke-width="1.6" fill="none"/><path d="M0 -14 q10 -6 18 -2 q-8 8 -18 2z" fill="#6E7B4A" transform="rotate(-18 0 -14)" stroke="#4E5A30" stroke-width=".6"/><path d="M0 -28 q10 -6 18 -2 q-8 8 -18 2z" fill="#6E7B4A" transform="rotate(198 0 -28)" stroke="#4E5A30" stroke-width=".6"/><path d="M0 -42 q10 -6 18 -2 q-8 8 -18 2z" fill="#6E7B4A" transform="rotate(-18 0 -42)" stroke="#4E5A30" stroke-width=".6"/><path d="M0 -56 q10 -6 18 -2 q-8 8 -18 2z" fill="#6E7B4A" transform="rotate(198 0 -56)" stroke="#4E5A30" stroke-width=".6"/><path d="M0 -66 q4 -10 0 -18 q-4 8 0 18z" fill="#6E7B4A" stroke="#4E5A30" stroke-width=".6"/></g><g transform="translate(46 186) rotate(-14) scale(1.05)"><path d="M0 0 Q2 -32 0 -66" stroke="#4E5A30" stroke-width="1.6" fill="none"/><path d="M0 -14 q10 -6 18 -2 q-8 8 -18 2z" fill="#6E7B4A" transform="rotate(-18 0 -14)" stroke="#4E5A30" stroke-width=".6"/><path d="M0 -28 q10 -6 18 -2 q-8 8 -18 2z" fill="#6E7B4A" transform="rotate(198 0 -28)" stroke="#4E5A30" stroke-width=".6"/><path d="M0 -42 q10 -6 18 -2 q-8 8 -18 2z" fill="#6E7B4A" transform="rotate(-18 0 -42)" stroke="#4E5A30" stroke-width=".6"/><path d="M0 -56 q10 -6 18 -2 q-8 8 -18 2z" fill="#6E7B4A" transform="rotate(198 0 -56)" stroke="#4E5A30" stroke-width=".6"/><path d="M0 -66 q4 -10 0 -18 q-4 8 0 18z" fill="#6E7B4A" stroke="#4E5A30" stroke-width=".6"/></g>
+<path d="M96 30 C 104 80, 92 120, 94 172" stroke="#8A1C2C" stroke-opacity=".18" stroke-width="22" fill="none" stroke-linecap="round"/>
+<g><rect x="68.5" y="37" width="51.0" height="6" rx="3" fill="#E6CDB4"/><rect x="77.5" y="34" width="33.0" height="13" rx="6" fill="url(#bbone)" stroke="#8A1C2C" stroke-width="1.4"/></g><ellipse cx="96.0" cy="49" rx="12.5" ry="2.6" fill="#2A8C9E"/><g><rect x="71.5" y="54" width="53.0" height="6" rx="3" fill="#E6CDB4"/><rect x="80.5" y="51" width="35.0" height="13" rx="6" fill="url(#bbone)" stroke="#8A1C2C" stroke-width="1.4"/></g><ellipse cx="100.0" cy="66" rx="13.5" ry="2.6" fill="#2A8C9E"/><g><rect x="74.5" y="71" width="55.0" height="6" rx="3" fill="#E6CDB4"/><rect x="83.5" y="68" width="37.0" height="13" rx="6" fill="url(#bbone)" stroke="#8A1C2C" stroke-width="1.4"/></g><ellipse cx="103.0" cy="83" rx="14.5" ry="2.6" fill="#2A8C9E"/><g><rect x="75.5" y="88" width="57.0" height="6" rx="3" fill="#E6CDB4"/><rect x="84.5" y="85" width="39.0" height="13" rx="6" fill="url(#bbone)" stroke="#8A1C2C" stroke-width="1.4"/></g><ellipse cx="103.5" cy="100" rx="15.5" ry="2.6" fill="#2A8C9E"/><g><rect x="74.5" y="105" width="57.0" height="6" rx="3" fill="#E6CDB4"/><rect x="83.5" y="102" width="39.0" height="13" rx="6" fill="url(#bbone)" stroke="#8A1C2C" stroke-width="1.4"/></g><ellipse cx="101.5" cy="117" rx="15.5" ry="2.6" fill="#2A8C9E"/><g><rect x="72.5" y="122" width="55.0" height="6" rx="3" fill="#E6CDB4"/><rect x="81.5" y="119" width="37.0" height="13" rx="6" fill="url(#bbone)" stroke="#8A1C2C" stroke-width="1.4"/></g><ellipse cx="98.0" cy="134" rx="14.5" ry="2.6" fill="#2A8C9E"/><g><rect x="69.5" y="139" width="53.0" height="6" rx="3" fill="#E6CDB4"/><rect x="78.5" y="136" width="35.0" height="13" rx="6" fill="url(#bbone)" stroke="#8A1C2C" stroke-width="1.4"/></g><ellipse cx="94.5" cy="151" rx="13.5" ry="2.6" fill="#2A8C9E"/><g><rect x="67.5" y="156" width="51.0" height="6" rx="3" fill="#E6CDB4"/><rect x="76.5" y="153" width="33.0" height="13" rx="6" fill="url(#bbone)" stroke="#8A1C2C" stroke-width="1.4"/></g><rect width="200" height="200" fill="#fff" filter="url(#btx)"/></g>
+</svg></div><h3>Осанка и спина</h3><p>Сколиоз, гиперлордоз, боли в шее, пояснице и лопатках, головные боли.</p></article><article class="dir"><div class="dir-ill"><svg viewBox="0 0 200 200" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<radialGradient id="cbg" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#F8E4D3"/><stop offset=".7" stop-color="#EDC8B0"/><stop offset="1" stop-color="#E2B094"/></radialGradient>
+<filter id="ctx" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="4" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 .45  0 0 0 0 .28  0 0 0 0 .2  0 0 0 .14 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+<clipPath id="cc"><circle cx="100" cy="100" r="100"/></clipPath>
+</defs>
+<g clip-path="url(#cc)"><circle cx="100" cy="100" r="100" fill="url(#cbg)"/><defs><linearGradient id="cp1" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#8A1C2C"/><stop offset="1" stop-color="#D9677A"/></linearGradient>
+<linearGradient id="cp2" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#A3293C"/><stop offset="1" stop-color="#F0A3A9"/></linearGradient>
+<linearGradient id="cp3" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#B04A57"/><stop offset="1" stop-color="#F2B8B4"/></linearGradient>
+<linearGradient id="clf" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4E5A30"/><stop offset="1" stop-color="#7E8C55"/></linearGradient></defs>
+<path d="M20 150 Q60 140 100 150 T180 150" stroke="#2A8C9E" stroke-opacity=".45" stroke-width="2" fill="none"/>
+<path d="M36 164 Q70 156 100 164 T164 164" stroke="#2A8C9E" stroke-opacity=".3" stroke-width="2" fill="none"/>
+<path d="M100 142 C70 150 40 146 26 132 C52 124 80 128 100 142z" fill="url(#clf)"/>
+<path d="M100 142 C130 150 160 146 174 132 C148 124 120 128 100 142z" fill="url(#clf)" transform="scale(-1 1) translate(-200 0) scale(-1 1) translate(-200 0)"/>
+<path d="M100 140 C76 136 52 120 44 98 C66 98 88 114 100 140z" fill="url(#cp3)"/>
+<path d="M100 140 C124 136 148 120 156 98 C134 98 112 114 100 140z" fill="url(#cp3)"/>
+<path d="M100 140 C80 124 68 98 72 72 C90 84 102 110 100 140z" fill="url(#cp2)"/>
+<path d="M100 140 C120 124 132 98 128 72 C110 84 98 110 100 140z" fill="url(#cp2)"/>
+<path d="M100 140 C86 116 86 76 100 50 C114 76 114 116 100 140z" fill="url(#cp1)"/>
+<path d="M100 132 C94 112 94 84 100 64" stroke="#fff" stroke-opacity=".35" stroke-width="1.4" fill="none"/>
+<circle cx="150" cy="54" r="5" fill="#8A1C2C"/><circle cx="44" cy="64" r="3" fill="#2A8C9E"/><rect width="200" height="200" fill="#fff" filter="url(#ctx)"/></g>
+</svg></div><h3>Женское здоровье</h3><p>Мышцы тазового дна, облегчение во время хайда, подтекания, гормональный фон, желание к мужу.</p></article><article class="dir"><div class="dir-ill"><svg viewBox="0 0 200 200" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<radialGradient id="dbg" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#F8E4D3"/><stop offset=".7" stop-color="#EDC8B0"/><stop offset="1" stop-color="#E2B094"/></radialGradient>
+<filter id="dtx" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="4" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 .45  0 0 0 0 .28  0 0 0 0 .2  0 0 0 .14 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+<clipPath id="dc"><circle cx="100" cy="100" r="100"/></clipPath>
+</defs>
+<g clip-path="url(#dc)"><circle cx="100" cy="100" r="100" fill="url(#dbg)"/><defs><linearGradient id="dw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C2475A"/><stop offset="1" stop-color="#7A1626"/></linearGradient>
+<linearGradient id="dt" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5FB6C4"/><stop offset="1" stop-color="#16606E"/></linearGradient></defs>
+<g transform="translate(178 170) rotate(28) scale(1.1)"><path d="M0 0 Q2 -32 0 -66" stroke="#4E5A30" stroke-width="1.6" fill="none"/><path d="M0 -14 q10 -6 18 -2 q-8 8 -18 2z" fill="#6E7B4A" transform="rotate(-18 0 -14)" stroke="#4E5A30" stroke-width=".6"/><path d="M0 -28 q10 -6 18 -2 q-8 8 -18 2z" fill="#6E7B4A" transform="rotate(198 0 -28)" stroke="#4E5A30" stroke-width=".6"/><path d="M0 -42 q10 -6 18 -2 q-8 8 -18 2z" fill="#6E7B4A" transform="rotate(-18 0 -42)" stroke="#4E5A30" stroke-width=".6"/><path d="M0 -56 q10 -6 18 -2 q-8 8 -18 2z" fill="#6E7B4A" transform="rotate(198 0 -56)" stroke="#4E5A30" stroke-width=".6"/><path d="M0 -66 q4 -10 0 -18 q-4 8 0 18z" fill="#6E7B4A" stroke="#4E5A30" stroke-width=".6"/></g>
+<ellipse cx="100" cy="160" rx="62" ry="8" fill="#9E6E5A" opacity=".25"/>
+<path d="M30 132 C 50 96, 112 150, 150 112 S 176 74, 160 64" stroke="#E9DFB8" stroke-width="16" fill="none" stroke-linecap="round"/>
+<path d="M30 132 C 50 96, 112 150, 150 112 S 176 74, 160 64" stroke="#C9B77E" stroke-width="16" fill="none" stroke-linecap="round" stroke-dasharray="1.2 5" opacity=".9"/>
+<circle cx="150" cy="62" r="22" fill="url(#dt)"/><circle cx="150" cy="62" r="8" fill="#0F4752"/><circle cx="144" cy="55" r="5" fill="#fff" opacity=".35"/>
+<g transform="translate(100 104) rotate(-24)">
+ <rect x="-34" y="-4" width="68" height="8" rx="4" fill="#5B4842"/>
+ <rect x="-50" y="-20" width="16" height="40" rx="6" fill="url(#dw)"/><rect x="-60" y="-14" width="12" height="28" rx="5" fill="url(#dw)"/>
+ <rect x="34" y="-20" width="16" height="40" rx="6" fill="url(#dw)"/><rect x="48" y="-14" width="12" height="28" rx="5" fill="url(#dw)"/>
+ <rect x="-47" y="-16" width="4" height="22" rx="2" fill="#fff" opacity=".3"/><rect x="37" y="-16" width="4" height="22" rx="2" fill="#fff" opacity=".3"/>
+</g><rect width="200" height="200" fill="#fff" filter="url(#dtx)"/></g>
+</svg></div><h3>Тело и тонус</h3><p>Живот, который не уходит, дряблая кожа, целлюлит, отёки, лишний вес и энергия.</p></article></div>
+</div></section>
+
+<section class="sec" id="method" style="padding-top:0"><div class="wrap">
+  <p class="kick">Подход</p>
+  <h2>Метод Анны — <em>комплексный</em></h2>
+  <ol class="steps">
+    <li><h3>Выравниваем ось тела</h3><p>Начинаем с осанки и положения тела — это основа, без которой нагрузка не даёт результата.</p></li>
+    <li><h3>Мягко укрепляем</h3><p>Включаем глубокие мышцы и тазовое дно — без стресса и перегрузок.</p></li>
+    <li><h3>Силовые — когда тело готово</h3><p>Нагрузку повышаем постепенно, только когда тело к этому готово.</p></li>
+  </ol>
+  <div class="self"><span>Самотейпирование</span><span>Самомассаж</span><span>Самоостеопатия</span></div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <p class="kick">О тренере</p>
+  <h2>Я прошла это <em>сама</em></h2>
+  <div class="about">
+    <div class="about-q">
+      <img src="img/logo-160.png" alt="" width="150" height="150">
+      <div class="big">14+<small>лет работы с женщинами</small></div>
+      <blockquote>Я сама прошла многие проблемы, с которыми приходят женщины: головные боли, прибавка в весе больше 20 кг, недержание, диастаз, отсутствие энергии, выпирающий животик. Мне удалось избежать операции на плечо — когда квота уже была получена и дата операции назначена. Плечо больше не беспокоит. Поэтому могу помочь практически каждой.</blockquote>
+    </div>
+    <div class="about-l">
+      <h3>Анна</h3>
+      <p class="role">Специалист по женскому здоровью, тренер, практикующий телесный терапевт и массажист</p>
+      <div class="facts">
+        <div class="fact"><b>14+</b><span>лет работаю с женщинами</span></div>
+        <div class="fact"><b>40</b><span>лет, мама трёх дочек</span></div>
+        <div class="fact"><b>3 + 1</b><span>женские группы в Zoom и детская</span></div>
+        <div class="fact"><b>1 год+</b><span>сёстры занимаются со мной больше года</span></div>
+      </div>
+      <p class="about-note">Ко мне приходят и молоденькие девочки, и бабушки — есть опыт работы с каждой. Понимаю, как работает тело и как давать нагрузку.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec" id="formats" style="padding-top:0"><div class="wrap">
+  <p class="kick">Форматы и стоимость</p>
+  <h2>Как проходят <em>тренировки</em></h2>
+  <div class="trial"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="1.5"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-4-6-1.5S10 8 12 8zm0 0c2-4 6-4 6-1.5S14 8 12 8z"/></svg>Первое пробное занятие — бесплатно</div>
+  <div class="fmts">
+    <article class="fmt"><div class="fmt-ic"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3z"/></svg></div><h3>Тренировки в записи</h3><p>Закрытый канал с тренировками — занимаетесь дома в удобное время.</p><div class="price">3 000 ₽ <small>/ месяц</small></div><a class="btn btn-line" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B0%D0%B1%D0%BE%D0%BD%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%20%D0%BD%D0%B0%20%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8." target="_blank" rel="noopener">Хочу в записи<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+    <article class="fmt hl"><div class="fmt-ic"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 14.6c2.8-.6 6 1.3 6 4.4"/></svg></div><h3>Zoom по расписанию</h3><p>Живые тренировки в группе. Сейчас идут три женские группы и одна детская — для девочек от 7 до 15 лет.</p><div class="price">3 000 ₽ <small>/ месяц</small></div><a class="btn btn-wine" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%20%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B5%20%D0%B2%20Zoom%20%D0%BF%D0%BE%20%D1%80%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8E." target="_blank" rel="noopener">Хочу в группу<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-line" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%20%D0%B4%D0%BE%D1%87%D0%BA%D1%83%20%D0%B2%20%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D1%83%D1%8E%20%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D1%83." target="_blank" rel="noopener">Детская группа</a></article>
+    <article class="fmt"><div class="fmt-ic"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></div><h3>Индивидуально</h3><p>Работа лично с вами — под ваш запрос и ваше тело.</p><div class="price" style="font-size:26px">По запросу</div><a class="btn btn-line" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%D0%B1%20%D0%B8%D0%BD%D0%B4%D0%B8%D0%B2%D0%B8%D0%B4%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B5." target="_blank" rel="noopener">Узнать подробнее<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+  </div>
+  <p class="note">Все программы длительные и регулярные — присоединиться можно в любой момент.</p>
+</div></section>
+
+<section class="sec" id="edu" style="padding-top:0"><div class="wrap">
+  <div class="edu">
+    <div>
+      <p class="kick">Обучение тренеров</p>
+      <h2>Халяльная профессия — <em>тренер для сестёр</em></h2>
+      <p>Обучаю тренеров, в том числе без опыта. Это возможность получить халяльную профессию и вести тренировки, не выходя из дома.</p>
+      <p>Для меня это стало способом самой заниматься регулярно: когда есть ответственность за подопечных, хочешь не хочешь — пойдёшь на тренировку.</p>
+      <a class="btn btn-cream" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%D0%B1%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B8%20%D1%82%D1%80%D0%B5%D0%BD%D0%B5%D1%80%D0%BE%D0%B2." target="_blank" rel="noopener">Узнать об обучении<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <ul>
+      <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Можно без опыта</li>
+      <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/></svg>Работа из дома</li>
+      <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>Халяльная профессия</li>
+      <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>Регулярность и дисциплина для себя</li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="sec" id="reviews" style="padding-top:0"><div class="wrap">
+  <p class="kick">Отзывы</p>
+  <h2>Что говорят <em>сёстры</em></h2>
+  <p class="lead">Листайте вправо — как фото в галерее.</p>
+  <div class="car" data-car>
+    <div class="car-track" tabindex="0" role="region" aria-label="Отзывы учениц, листайте вправо"><figure class="slide slide-big"><span class="slide-tag">3 недели занятий</span><span class="rev-q" aria-hidden="true">“</span><blockquote><p>После трёх недель занятий хочется отметить, что в теле в целом появилась лёгкость, больше сил. Стопы стали намного меньше заваливаться внутрь, начали работать нужные группы мышц, и у меня перестала болеть поясница на постоянной основе. Стало легче и свободнее дышать, благодаря чему почти полностью ушли головокружения.</p><p>Третья неделя стала для меня интересной: я начала чувствовать связь со своим телом. Я благодарна Аллаху за то, что узнала об Анне, и могу спокойно довериться ей на время своей беременности и после. БаракаЛлаху фики за твой труд и твои знания!</p></blockquote><figcaption><span class="rev-av" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>Ученица · спина, стопы, дыхание</figcaption></figure><figure class="slide slide-big"><span class="slide-tag">Осанка и намаз</span><span class="rev-q" aria-hidden="true">“</span><blockquote><p>Самочувствие хорошее, спину теперь не надо напрягать, чтобы выпрямиться, — неосознанно получается. Ещё не идеально, конечно, но намного лучше, чем было, альхамдулиЛлях. Тазобедренный сустав меньше хрустеть стал, да и в целом тело тоже — особенно изменения заметны во время намаза. Заметила, что стала больше дышать животом, а не грудной клеткой. И в движениях больше лёгкости.</p></blockquote><figcaption><span class="rev-av" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>Ученица · осанка</figcaption></figure><figure class="slide"><span class="rev-q" aria-hidden="true">“</span><blockquote><p>Эти тренировки мне так полюбились, Аллахумма барик! Это то, что нужно девушке, — именно тазовое дно прокачивать. У меня самой сидячий образ жизни, я особо не двигаюсь — я делаю эти тренировки, и всё.</p></blockquote><figcaption><span class="rev-av" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>Ученица · Сидячий образ жизни</figcaption></figure><figure class="slide"><span class="rev-q" aria-hidden="true">“</span><blockquote><p>Мне ооочень понравилась тренировка! Поясница не заболела, тазобедренные суставы подвигались, ягодицы чуть не умерли, пресс включился и начал помогать мне жить эту жизнь. В восторге просто!</p></blockquote><figcaption><span class="rev-av" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>Ученица · Пресс и ягодицы</figcaption></figure><figure class="slide"><span class="rev-q" aria-hidden="true">“</span><blockquote><p>Тренировка отличная. Я обычно занимаюсь силовыми или кардио, но тут такое расслабление мышц. А это растяжение шеи — просто топ. В конце не хотелось даже вставать с этого упражнения. جزاك الله خيرا</p></blockquote><figcaption><span class="rev-av" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>Ученица · После силовых и кардио</figcaption></figure><figure class="slide"><span class="rev-q" aria-hidden="true">“</span><blockquote><p>Ассаляму алейкум! Лежу сейчас и чувствую, что ягодичные мышцы стали сильнее: я прям хорошо чувствую их силу. Визуально пока не могу сказать, но предполагаю, что и визуально они подтянулись.</p></blockquote><figcaption><span class="rev-av" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>Ученица · Ягодицы</figcaption></figure><figure class="slide"><span class="rev-q" aria-hidden="true">“</span><blockquote><p>Упражнение на плечи прям вообще — то, что мой организм просил, альхамдулиллях. Прогрелась и наконец выдохнула: расслабиться сегодня не могла, а сейчас прям выдохнула.</p></blockquote><figcaption><span class="rev-av" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>Ученица · Плечи и расслабление</figcaption></figure><figure class="slide"><span class="rev-q" aria-hidden="true">“</span><blockquote><p>Мне вас посоветовала сестра по вере. Вашу методику и подачу она мне рассказала, хвалила вас. Аллахумма барик!</p></blockquote><figcaption><span class="rev-av" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>Ученица · По рекомендации</figcaption></figure><figure class="slide slide-chips"><span class="slide-tag">Сразу после тренировки</span><ul><li>«Даже не заметила, что прошло 40 минут — на одном дыхании, ма шаа Аллах»</li><li>«Вроде бы лёгкие упражнения, но я, кажется, вспотела 😄»</li><li>«Почувствовала лёгкость в теле после тренировки»</li></ul><figcaption><span class="rev-av" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>Ученицы групп</figcaption></figure><figure class="slide slide-chips"><span class="slide-tag">Сразу после тренировки</span><ul><li>«Тело максимально расслабилось, прекрасные ощущения, баракаЛлаху фики»</li><li>«Мой сыночек 3 годика со мной делал — всё ещё ходит упражнения делает, альхамдулиллях»</li><li>«Очень понравилось занятие, особенно на мышцы тазового дна. Приятные ощущения по всему телу»</li></ul><figcaption><span class="rev-av" aria-hidden="true"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>Ученицы групп</figcaption></figure></div>
+    <div class="car-nav">
+      <div class="car-dots" role="tablist" aria-label="Выбор отзыва"><button type="button" class="car-dot" role="tab" aria-label="Отзыв 1" aria-selected="true"></button><button type="button" class="car-dot" role="tab" aria-label="Отзыв 2"></button><button type="button" class="car-dot" role="tab" aria-label="Отзыв 3"></button><button type="button" class="car-dot" role="tab" aria-label="Отзыв 4"></button><button type="button" class="car-dot" role="tab" aria-label="Отзыв 5"></button><button type="button" class="car-dot" role="tab" aria-label="Отзыв 6"></button><button type="button" class="car-dot" role="tab" aria-label="Отзыв 7"></button><button type="button" class="car-dot" role="tab" aria-label="Отзыв 8"></button><button type="button" class="car-dot" role="tab" aria-label="Отзыв 9"></button><button type="button" class="car-dot" role="tab" aria-label="Отзыв 10"></button></div>
+      <div class="car-btns">
+        <button type="button" class="car-btn" data-dir="-1" aria-label="Предыдущий отзыв"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button type="button" class="car-btn car-next" data-dir="1" aria-label="Следующий отзыв"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <p class="kick">Как начать</p>
+  <h2>Ваш путь <em>к лёгкости в теле</em></h2>
+  <ol class="path">
+    <li><div class="dot">1</div><div><h3>Заявка</h3><p>Пишете в Telegram, что беспокоит</p></div></li>
+    <li><div class="dot">2</div><div><h3>Пробное занятие</h3><p>Первое — бесплатно</p></div></li>
+    <li><div class="dot">3</div><div><h3>Выбор формата</h3><p>Запись, Zoom или индивидуально</p></div></li>
+    <li><div class="dot">4</div><div><h3>Регулярность</h3><p>Тренировки с поддержкой</p></div></li>
+    <li><div class="dot">5</div><div><h3>Результат</h3><p>Лёгкость, силы и тело без боли</p></div></li>
+  </ol>
+</div></section>
+
+<section class="sec" id="faq" style="padding-top:0"><div class="wrap">
+  <p class="kick">Вопросы</p>
+  <h2>Частые <em>вопросы</em></h2>
+  <div class="faqs"><details class="faq"><summary>Сколько стоит?<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Абонемент на месяц — 3 000 ₽. Есть индивидуальный формат работы — стоимость обсуждаем лично. Первое пробное занятие — бесплатно.</p></details><details class="faq"><summary>В каком формате проходят тренировки?<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Два формата: канал с тренировками в записи — занимаетесь в удобное время, и тренировки по расписанию в Zoom. Сейчас идут три женские группы и одна детская — для девочек от 7 до 15 лет.</p></details><details class="faq"><summary>Какое нужно оборудование?<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Есть длинный список рекомендованного, но я всегда предлагаю замены из того, что есть под рукой. Например, вместо ролла подойдёт банное полотенце, скрученное в ролл.</p></details><details class="faq"><summary>Можно присоединиться сейчас?<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Да. Все программы длительные и регулярные, поэтому присоединиться можно в любой момент. Есть сёстры, которые занимаются больше года — это помогает поддерживать себя в форме.</p></details><details class="faq"><summary>Мне подойдёт? Я никогда не занималась / мне уже много лет<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Ко мне обращаются и молоденькие девочки, и бабушки — есть опыт работы с каждой. Нагрузку даю по вашему телу: сначала выравниваем ось, потом мягко укрепляем, силовые — только когда тело готово.</p></details><details class="faq"><summary>Как записаться?<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Напишите мне в Telegram — кнопки на этой странице открывают чат с уже готовым сообщением. Начнём с бесплатного пробного занятия.</p></details></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <div class="cta">
+    <img src="img/logo-round.png" alt="Логотип «Метод Анны»" width="170" height="170">
+    <div><h2>Запишитесь на <em>бесплатное пробное</em> занятие</h2><p>Напишите в Telegram — кнопка откроет чат с готовым сообщением.</p></div>
+    <a class="btn btn-wine" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BD%D0%BE%D0%B5%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5." target="_blank" rel="noopener">Написать в Telegram<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</div></section>
+</main>
+
+<footer class="ftr"><div class="wrap">
+  <a class="brand" href="#top"><img src="img/logo-160.png" alt="" width="52" height="52"><span><b>Метод Анны</b><small>женское здоровье</small></span></a>
+  <nav aria-label="Нижнее меню"><a href="#method">О методе</a><a href="#formats">Форматы</a><a href="#edu">Обучение тренеров</a><a href="#reviews">Отзывы</a><a href="#faq">Вопросы</a></nav>
+  <a class="tg" href="https://t.me/+XnhSlB4Jr69iYzQ6" target="_blank" rel="noopener"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 4 3 11l6 2 2 6 3-4 5 4z"/><path d="m9 13 8-6"/></svg>Telegram-канал</a>
+  <small>© Метод Анны</small>
+</div></footer>
+<script>
+(function(){
+var root=document.querySelector('[data-quiz]');if(!root)return;
+var C=[0,'energy','back','body','body','body','energy','pelvic','pelvic','pelvic','belly','energy','pelvic'];
+var G={pelvic:{t:'мышцы тазового дна',x:'Тяжесть внизу живота, подтекания, смущающие звуки и снижение желания — частые признаки ослабленного тазового дна. Хорошая новость: это мягко и деликатно восстанавливается правильными упражнениями.'},
+belly:{t:'живот и мышцы кора',x:'Если живот не уходит даже при спорте и диетах, часто дело не в калориях, а в диастазе, осанке и работе глубоких мышц. Качать пресс здесь не нужно — нужно сначала выровнять ось тела.'},
+back:{t:'спина и осанка',x:'Боли в пояснице, шее и лопатках обычно связаны со смещением оси тела и перегрузкой одних мышц при слабости других. Начинаем с выравнивания, самомассажа и мягкой мобилизации.'},
+body:{t:'обмен веществ и лимфа',x:'Вес, отёки и дряблость кожи хорошо откликаются на регулярное движение, работу с лимфой и мягкое укрепление — без изнуряющих тренировок и жёстких диет.'},
+energy:{t:'энергия и гормональный баланс',x:'Усталость, плохой сон и гормональные качели — сигнал, что телу нужна не нагрузка «через силу», а щадящая регулярная практика, которая восстанавливает, а не истощает.'}};
+var ST={plan:'Подготовка к беременности — отличное время, чтобы укрепить тазовое дно и спину заранее.',preg:'Во время беременности занимаемся бережно, с учётом срока и самочувствия.',post:'После родов важно восстановиться правильно: сначала тазовое дно и диастаз, и только потом — нагрузка.',climax:'В период гормональных перемен регулярная мягкая практика особенно поддерживает самочувствие.',none:''};
+var AC={zero:'Начать можно с нуля — программа подстраивается под ваш уровень, а оборудование можно заменить подручным (например, банным полотенцем, скрученным в ролл).',sometimes:'Регулярность — ключ к результату. В группе с расписанием и поддержкой сестёр заниматься гораздо легче.',regular:'Если результата нет, скорее всего, нагрузка даётся раньше, чем тело к ней готово. Метод Анны выстраивает правильную последовательность.'};
+var S={step:0,sel:[],stage:null,activity:null};
+var panes=root.querySelectorAll('.q-pane'),bar=root.querySelector('.q-bar i'),lab=root.querySelector('.q-step'),next1=root.querySelector('.q-next1');
+var LBL=['Начало','Вопрос 1 из 3','Вопрос 2 из 3','Вопрос 3 из 3','Готово'];
+function go(n){S.step=n;panes.forEach(function(p){p.hidden=(+p.dataset.pane!==n)});bar.style.width=(n/4*100)+'%';lab.textContent=LBL[n];
+ var r=root.getBoundingClientRect();if(r.top<70)window.scrollTo({top:window.scrollY+r.top-90,behavior:'smooth'});}
+root.querySelectorAll('[data-next]').forEach(function(b){b.addEventListener('click',function(){go(S.step+1)})});
+root.querySelectorAll('[data-prev]').forEach(function(b){b.addEventListener('click',function(){go(S.step-1)})});
+root.querySelectorAll('.q-multi .q-opt').forEach(function(o){o.addEventListener('click',function(){var v=+o.dataset.v,i=S.sel.indexOf(v);if(i>-1)S.sel.splice(i,1);else S.sel.push(v);o.setAttribute('aria-pressed',i>-1?'false':'true');next1.disabled=!S.sel.length})});
+root.querySelectorAll('.q-single').forEach(function(g){g.querySelectorAll('.q-opt').forEach(function(o){o.addEventListener('click',function(){
+ g.querySelectorAll('.q-opt').forEach(function(x){x.setAttribute('aria-pressed','false')});o.setAttribute('aria-pressed','true');S[g.dataset.name]=o.dataset.v;
+ setTimeout(function(){if(S.step===3)result();go(S.step+1)},280)})})});
+function txt(sel){return sel?sel.querySelector('.q-t').textContent:''}
+function result(){
+ var order=['pelvic','belly','back','body','energy'],cnt={};S.sel.forEach(function(id){cnt[C[id]]=(cnt[C[id]]||0)+1});
+ var f=order.filter(function(g){return cnt[g]}).sort(function(a,b){return cnt[b]-cnt[a]}),m=f[0]||'energy';
+ root.querySelector('.q-title').textContent='Ваш главный фокус: '+G[m].t;
+ var h='<p>'+G[m].x+'</p>';
+ if(f.length>1)h+='<p>Также стоит уделить внимание: <b>'+f.slice(1).map(function(g){return G[g].t}).join(', ')+'</b>. В комплексном подходе всё это прорабатывается вместе.</p>';
+ if(ST[S.stage])h+='<p>'+ST[S.stage]+'</p>';
+ h+='<p>'+AC[S.activity]+'</p><p><b>Начните с бесплатного пробного занятия</b> — я подскажу, какой формат подойдёт именно вам.</p>';
+ root.querySelector('.q-text').innerHTML=h;
+ var list=S.sel.slice().sort(function(a,b){return a-b}).map(function(id){return '— '+txt(root.querySelector('.q-multi .q-opt[data-v="'+id+'"]'))}).join('\n');
+ var msg='Ассаляму алейкум ва рахматуЛлахи ва баракятух, Анна! Прошла тест на сайте, хочу записаться на бесплатное пробное занятие.\n\nМеня беспокоит:\n'+list+'\n\nПериод: '+txt(root.querySelector('[data-name="stage"] [aria-pressed="true"]'))+'\nТренировки: '+txt(root.querySelector('[data-name="activity"] [aria-pressed="true"]'));
+ root.querySelector('.q-send').href=root.dataset.tg+encodeURIComponent(msg);
+}
+root.querySelector('.q-restart').addEventListener('click',function(){S={step:0,sel:[],stage:null,activity:null};root.querySelectorAll('.q-opt').forEach(function(x){x.setAttribute('aria-pressed','false')});next1.disabled=true;go(0)});
+})();
+</script><script>
+document.querySelectorAll('[data-car]').forEach(function(car){
+  var tr=car.querySelector('.car-track'),sl=[].slice.call(tr.children),dots=[].slice.call(car.querySelectorAll('.car-dot')),bt=car.querySelectorAll('.car-btn');
+  function idx(){var x=tr.scrollLeft,b=0,d=1e9;sl.forEach(function(s,i){var v=Math.abs(s.offsetLeft-tr.offsetLeft-x-parseFloat(getComputedStyle(tr).paddingLeft));if(v<d){d=v;b=i}});return b}
+  function go(i){i=Math.max(0,Math.min(sl.length-1,i));tr.scrollTo({left:sl[i].offsetLeft-sl[0].offsetLeft,behavior:'smooth'})}
+  function upd(){var i=idx();dots.forEach(function(d,k){d.setAttribute('aria-selected',k===i?'true':'false')});bt[0].disabled=tr.scrollLeft<4;bt[1].disabled=tr.scrollLeft+tr.clientWidth>=tr.scrollWidth-4}
+  bt.forEach(function(b){b.addEventListener('click',function(){go(idx()+(+b.dataset.dir))})});
+  dots.forEach(function(d,k){d.addEventListener('click',function(){go(k)})});
+  var t;tr.addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(upd,60)},{passive:true});upd();
+});
+</script>
+</body>
+</html>
