@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700&family=Amiri&display=swap">
 <style>
-:root{--bg:#F4EBDD;--card:#FBF6EF;--card2:#EFE2CF;--wine:#8A1C2C;--wine-d:#6A1421;--teal:#1B6E7E;--olive:#5C6A3A;--peach:#E9BFA6;--ink:#2B1D1A;--muted:#5B4842;--line:#E2D1BC;--r:24px}
+:root{--bg:#F4EBDD;--card:#FBF6EF;--card2:#EFE2CF;--wine:#13606E;--wine-d:#0D4A55;--teal:#1B6E7E;--olive:#5C6A3A;--peach:#E9BFA6;--ink:#2B1D1A;--muted:#5B4842;--line:#E2D1BC;--r:24px}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:'Montserrat',system-ui,sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
@@ -44,26 +44,26 @@ h2 em,h1 em{font-style:italic;color:var(--wine)}
 @media (max-width:980px){.nav{display:none}}
 .hdr-btn .short{display:none} @media (max-width:600px){.hdr-btn .long{display:none}.hdr-btn .short{display:inline}.hdr .wrap{min-height:66px}.brand img{width:44px;height:44px}.brand b{font-size:18px}} @media (max-width:420px){.brand small{display:none}.hdr .btn{padding:10px 18px;font-size:13.5px;min-height:42px}}
 /* hero */
-.hero{position:relative;overflow:hidden;color:#FBEFE6;background:radial-gradient(ellipse 70% 80% at 78% 40%,#A82A3D 0%,#7E1727 38%,#4A0C17 100%)}
+.hero{position:relative;overflow:hidden;color:#EEF7F7;background:radial-gradient(ellipse 70% 80% at 78% 40%,#1E7F8F 0%,#13606E 38%,#0B3A43 100%)}
 .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 110%,rgba(233,191,166,.18),transparent 45%);pointer-events:none}
 .hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:clamp(32px,5vw,72px);padding-top:clamp(56px,8vw,110px);padding-bottom:clamp(64px,8vw,120px)}
-.hero .kick{color:#F2C9B8} .hero .kick:before{background:#F2C9B8}
+.hero .kick{color:#BFE6EA} .hero .kick:before{background:#BFE6EA}
 .hero h1{font-size:clamp(40px,5.6vw,76px);line-height:1.02;letter-spacing:-.02em;color:#FFF8F0}
-.hero h1 em{color:#F2C9B8}
-.hero .lead{color:#F1D9CF;margin-top:24px;max-width:540px}
+.hero h1 em{color:#BFE6EA}
+.hero .lead{color:#D6EDEF;margin-top:24px;max-width:540px}
 .hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
 .btn-ghost{border:1.5px solid rgba(251,239,230,.55);color:#FFF8F0;background:transparent} .btn-ghost:hover{background:rgba(251,239,230,.12);color:#fff}
 .hero .btn-cream{box-shadow:0 14px 30px -12px rgba(0,0,0,.45)}
 .stats{display:flex;flex-wrap:wrap;gap:0;margin:44px 0 0;padding-top:26px;border-top:1px solid rgba(251,239,230,.2)}
 .stats div{padding:0 26px;border-left:1px solid rgba(251,239,230,.2)} .stats div:first-child{padding-left:0;border-left:0}
 .stats dt{font-family:'Playfair Display',serif;font-size:clamp(28px,3vw,38px);line-height:1;color:#FFF8F0}
-.stats dd{margin:8px 0 0;font-size:13px;line-height:1.35;color:#E8C3B6}
+.stats dd{margin:8px 0 0;font-size:13px;line-height:1.35;color:#C9E6E9}
 .medal{position:relative;justify-self:center;width:min(100%,500px);aspect-ratio:1;display:grid;place-items:center}
 .ring{position:absolute;inset:0;width:100%;height:100%;animation:spin 60s linear infinite}
-.ring text{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:600;fill:#F2C9B8}
+.ring text{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:600;fill:#BFE6EA}
 @keyframes spin{to{transform:rotate(360deg)}}
-.medal-img{position:relative;width:76%;height:auto;aspect-ratio:1;border-radius:50%;box-shadow:0 0 0 10px rgba(251,239,230,.08),0 0 0 11px rgba(242,201,184,.35),0 40px 80px -20px rgba(20,2,6,.7),0 0 120px rgba(242,201,184,.25)}
-.float{position:absolute;display:flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;background:#FBF6EF;color:var(--ink);font-size:14px;font-weight:600;box-shadow:0 18px 36px -14px rgba(20,2,6,.6);animation:bob 6s ease-in-out infinite}
+.medal-img{position:relative;width:76%;height:auto;aspect-ratio:1;border-radius:50%;box-shadow:0 0 0 10px rgba(251,239,230,.08),0 0 0 11px rgba(191,230,234,.35),0 40px 80px -20px rgba(4,30,35,.7),0 0 120px rgba(191,230,234,.25)}
+.float{position:absolute;display:flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;background:#FBF6EF;color:var(--ink);font-size:14px;font-weight:600;box-shadow:0 18px 36px -14px rgba(4,30,35,.6);animation:bob 6s ease-in-out infinite}
 .float svg{color:var(--wine)}
 .f1{left:-2%;bottom:16%} .f2{right:-4%;top:12%;animation-delay:-3s}
 @keyframes bob{50%{transform:translateY(-8px)}}
@@ -75,7 +75,7 @@ h2 em,h1 em{font-style:italic;color:var(--wine)}
 .trust-sec{position:relative;margin-top:-34px;z-index:2}
 /* trust */
 .trust{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.trust div{display:flex;align-items:center;gap:12px;padding:18px;background:var(--card);border-radius:18px;box-shadow:0 18px 40px -26px rgba(74,12,23,.55);font-size:14px;font-weight:500;line-height:1.35}
+.trust div{display:flex;align-items:center;gap:12px;padding:18px;background:var(--card);border-radius:18px;box-shadow:0 18px 40px -26px rgba(11,58,67,.55);font-size:14px;font-weight:500;line-height:1.35}
 .trust svg{flex:none;color:var(--teal)}
 @media (max-width:860px){.trust{grid-template-columns:1fr 1fr}}
 @media (max-width:420px){.trust div{padding:14px;font-size:13px;flex-direction:column;align-items:flex-start;gap:8px}}
@@ -92,7 +92,7 @@ h2 em,h1 em{font-style:italic;color:var(--wine)}
 .q-top{display:flex;align-items:center;gap:16px}
 .q-step{flex:none;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--wine)}
 .q-bar{flex:1;height:6px;border-radius:6px;background:#EADBC8;overflow:hidden}
-.q-bar i{display:block;height:100%;width:33%;border-radius:6px;background:linear-gradient(90deg,var(--wine),#C2475A);transition:width .4s}
+.q-bar i{display:block;height:100%;width:33%;border-radius:6px;background:linear-gradient(90deg,var(--wine),#2A8C9E);transition:width .4s}
 .q-pane{margin-top:22px;animation:qIn .35s ease}
 @keyframes qIn{from{opacity:0;transform:translateY(8px)}}
 .q-h{font-size:clamp(24px,2.6vw,32px)}
@@ -103,7 +103,7 @@ h2 em,h1 em{font-style:italic;color:var(--wine)}
 .q-opt:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
 .q-box{flex:none;width:24px;height:24px;border-radius:8px;border:1.5px solid #CBB29C;display:grid;place-items:center;color:transparent;transition:all .2s}
 
-.q-opt[aria-pressed="true"]{border-color:var(--wine);background:#FBEFEA}
+.q-opt[aria-pressed="true"]{border-color:var(--wine);background:#E3F2F3}
 .q-opt[aria-pressed="true"] .q-box{background:var(--wine);border-color:var(--wine);color:#fff}
 .q-hello{text-align:center;padding:10px 0 6px} .q-salam{margin:0 0 6px;font-family:'Amiri',serif;font-size:clamp(22px,2.4vw,28px);color:var(--olive)} .q-lead{max-width:520px;margin:12px auto 0;color:var(--muted)} .q-perks{list-style:none;margin:20px 0 26px;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px} .q-perks li{display:flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;background:var(--card2);font-size:14px;font-weight:600} .q-perks svg{color:var(--wine)} .q-text p{margin:14px 0 0;line-height:1.65} .q-text b{color:var(--wine)} .q-text p:first-child{padding:16px 18px;border-radius:18px;background:var(--card2);margin-top:16px} .q-method{margin-top:20px;padding:18px;border-radius:20px;background:#1B6E7E;color:#F2FAFB} .q-method b{display:block;font-family:'Playfair Display',serif;font-weight:500;font-size:20px;text-align:center} .q-method ol{list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;text-align:center;font-size:13.5px;line-height:1.35} .q-method span{display:grid;place-items:center;width:32px;height:32px;margin:0 auto 6px;border-radius:50%;background:#FBF6EF;color:#1B6E7E;font-weight:700} .q-about{margin:16px 0 0;font-size:14.5px;color:var(--muted);line-height:1.6} .q-method li{min-width:0} @media (max-width:560px){.q-method ol{grid-template-columns:1fr;text-align:left} .q-method li{display:flex;align-items:center;gap:12px} .q-method span{margin:0;flex:none}} .q-small{margin:16px 0 0;font-size:13px;color:var(--muted);line-height:1.5} .q-warn{margin:8px 0 0;font-size:12px;color:#8A7A74} .q-nav{margin-top:24px;display:flex;justify-content:space-between;gap:12px}
 .q-nav [data-next]{margin-left:auto}
@@ -121,7 +121,7 @@ h2 em,h1 em{font-style:italic;color:var(--wine)}
 /* directions */
 .dirs{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
 .dir{background:var(--card);border-radius:var(--r);padding:22px 22px 26px;display:flex;flex-direction:column;gap:10px}
-.dir-ill{width:72%;max-width:180px;aspect-ratio:1;margin:4px auto 10px;filter:drop-shadow(0 14px 18px rgba(106,20,33,.16))} .dir-ill svg{display:block;width:100%;height:100%}
+.dir-ill{width:72%;max-width:180px;aspect-ratio:1;margin:4px auto 10px;filter:drop-shadow(0 14px 18px rgba(19,96,110,.16))} .dir-ill svg{display:block;width:100%;height:100%}
 .dir h3{font-size:24px}
 .dir p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.55}
 @media (max-width:980px){.dirs{grid-template-columns:1fr 1fr}}
@@ -137,10 +137,10 @@ h2 em,h1 em{font-style:italic;color:var(--wine)}
 @media (max-width:760px){.steps{grid-template-columns:1fr}}
 /* about */
 .about{display:grid;grid-template-columns:1fr 1.05fr;gap:18px;margin-top:40px}
-.about-q{background:var(--wine);color:#FBEFE6;border-radius:var(--r);padding:clamp(28px,4vw,48px);position:relative;overflow:hidden}
+.about-q{background:var(--wine);color:#EEF7F7;border-radius:var(--r);padding:clamp(28px,4vw,48px);position:relative;overflow:hidden}
 .about-q .big{font-family:'Playfair Display',serif;font-size:clamp(64px,8vw,96px);line-height:.9;color:#FBF6EF}
-.about-q .big small{display:block;font-family:'Montserrat',sans-serif;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#F2C9B8;margin-top:10px}
-.about-q blockquote{margin:28px 0 0;font-size:clamp(16px,1.5vw,18px);line-height:1.75;color:#FBEFE6} .about-q blockquote:before{content:'“';display:block;font-family:'Playfair Display',serif;font-size:64px;line-height:.5;color:#F2C9B8;margin-bottom:14px}
+.about-q .big small{display:block;font-family:'Montserrat',sans-serif;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#BFE6EA;margin-top:10px}
+.about-q blockquote{margin:28px 0 0;font-size:clamp(16px,1.5vw,18px);line-height:1.75;color:#EEF7F7} .about-q blockquote:before{content:'“';display:block;font-family:'Playfair Display',serif;font-size:64px;line-height:.5;color:#BFE6EA;margin-bottom:14px}
 .about-q img{position:absolute;right:-30px;top:-30px;width:150px;opacity:.16}
 .about-l{background:var(--card);border-radius:var(--r);padding:clamp(28px,4vw,48px)}
 .about-l h3{font-size:30px}
@@ -154,22 +154,23 @@ h2 em,h1 em{font-style:italic;color:var(--wine)}
 .fmts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
 .fmt{background:var(--card);border-radius:var(--r);padding:30px 26px;display:flex;flex-direction:column;gap:12px;border:1.5px solid transparent}
 .fmt.hl{border-color:var(--wine)}
-.fmt-ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:#F3E3D8;color:var(--wine)}
+.fmt-ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:#DCEDEE;color:var(--wine)}
 .fmt h3{font-size:25px}
 .fmt p{margin:0;color:var(--muted);font-size:15px}
 .price{margin-top:auto;padding-top:16px;border-top:1px solid var(--line);font-family:'Playfair Display',serif;font-size:34px;line-height:1.1;color:var(--ink)}
 .price small{font-family:'Montserrat',sans-serif;font-size:14px;color:var(--muted)}
 .fmt .btn{margin-top:8px}
+.fmt p{flex:1}
 .note{margin:20px 0 0;color:var(--muted);font-size:15px}
 @media (max-width:900px){.fmts{grid-template-columns:1fr}}
 /* edu */
-.edu{background:var(--wine);color:#FBEFE6;border-radius:32px;padding:clamp(32px,6vw,72px);display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(24px,5vw,64px);align-items:center;position:relative;overflow:hidden}
-.edu .kick{color:#F2C9B8} .edu .kick:before{background:#F2C9B8}
-.edu h2{color:#FFF8F0} .edu h2 em{color:#F2C9B8}
-.edu p{color:#F3DDD3;margin:18px 0 0;font-size:16.5px}
+.edu{background:var(--wine);color:#EEF7F7;border-radius:32px;padding:clamp(32px,6vw,72px);display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(24px,5vw,64px);align-items:center;position:relative;overflow:hidden}
+.edu .kick{color:#BFE6EA} .edu .kick:before{background:#BFE6EA}
+.edu h2{color:#FFF8F0} .edu h2 em{color:#BFE6EA}
+.edu p{color:#D8EEF0;margin:18px 0 0;font-size:16.5px}
 .edu ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
 .edu li{display:flex;gap:12px;align-items:center;background:rgba(255,248,240,.08);border:1px solid rgba(255,248,240,.18);border-radius:16px;padding:14px 16px;font-weight:500}
-.edu li svg{flex:none;color:#F2C9B8}
+.edu li svg{flex:none;color:#BFE6EA}
 .edu .btn{margin-top:28px}
 @media (max-width:860px){.edu{grid-template-columns:1fr}}
 /* reviews */
@@ -178,7 +179,7 @@ h2 em,h1 em{font-style:italic;color:var(--wine)}
 .rev-q{font-family:'Playfair Display',serif;font-size:64px;line-height:.6;color:var(--peach);display:block;height:26px}
 .rev blockquote{margin:0;font-size:15.5px;line-height:1.6}
 .rev figcaption{margin-top:16px;display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;color:var(--muted)}
-.rev-av{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#F3E3D8;color:var(--wine)}
+.rev-av{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#DCEDEE;color:var(--wine)}
 .feat{background:var(--card2);border-radius:32px;padding:clamp(28px,5vw,56px);margin-top:40px;display:grid;grid-template-columns:auto 1fr;gap:clamp(18px,3vw,36px)}
 .feat .n{font-family:'Playfair Display',serif;font-size:clamp(56px,7vw,88px);line-height:.9;color:var(--wine)}
 .feat .n small{display:block;font-family:'Montserrat',sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:8px}
@@ -193,7 +194,7 @@ h2 em,h1 em{font-style:italic;color:var(--wine)}
 .car-track{display:flex;align-items:flex-start;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;margin:0 calc(-1*clamp(16px,4vw,40px));padding:6px clamp(16px,4vw,40px) 14px;scroll-padding:0 clamp(16px,4vw,40px)}
 .car-track::-webkit-scrollbar{display:none}
 .car-track:focus-visible{outline:3px solid var(--teal);outline-offset:2px;border-radius:12px}
-.slide{flex:0 0 min(84%,380px);scroll-snap-align:start;margin:0;background:var(--card);border-radius:var(--r);padding:26px 24px 22px;display:flex;flex-direction:column;box-shadow:0 18px 40px -30px rgba(74,12,23,.5)}
+.slide{flex:0 0 min(84%,380px);scroll-snap-align:start;margin:0;background:var(--card);border-radius:var(--r);padding:26px 24px 22px;display:flex;flex-direction:column;box-shadow:0 18px 40px -30px rgba(11,58,67,.5)}
 .slide-big{flex-basis:min(88%,520px);background:var(--card2)}
 .slide blockquote{margin:0;font-size:16px;line-height:1.65}
 .slide blockquote p{margin:0 0 12px} .slide blockquote p:last-child{margin:0}
@@ -217,13 +218,13 @@ h2 em,h1 em{font-style:italic;color:var(--wine)}
 .path li:not(:last-child):after{content:"";position:absolute;top:32px;left:calc(50% + 40px);right:calc(-50% + 40px);height:1.5px;background:repeating-linear-gradient(90deg,var(--peach) 0 6px,transparent 6px 12px)}
 .path h3{font-size:19px;margin-bottom:6px}
 .path p{margin:0;font-size:14px;color:var(--muted);line-height:1.45}
-@media (max-width:860px){.path{grid-template-columns:1fr;gap:10px}.path li{display:grid;grid-template-columns:64px 1fr;gap:16px;text-align:left;align-items:center;background:var(--card);border-radius:18px;padding:14px}.path .dot{margin:0;background:#F3E3D8;border:0}.path li:after{display:none}}
+@media (max-width:860px){.path{grid-template-columns:1fr;gap:10px}.path li{display:grid;grid-template-columns:64px 1fr;gap:16px;text-align:left;align-items:center;background:var(--card);border-radius:18px;padding:14px}.path .dot{margin:0;background:#DCEDEE;border:0}.path li:after{display:none}}
 /* faq */
 .faqs{margin-top:36px;display:flex;flex-direction:column;gap:12px;max-width:880px}
 .faq{background:var(--card);border-radius:20px;padding:0 24px}
 .faq summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 0;font-family:'Playfair Display',serif;font-size:clamp(18px,1.8vw,21px);line-height:1.3}
 .faq summary::-webkit-details-marker{display:none}
-.faq-i{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#F3E3D8;color:var(--wine);transition:transform .25s}
+.faq-i{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#DCEDEE;color:var(--wine);transition:transform .25s}
 .faq[open] .faq-i{transform:rotate(45deg)}
 .faq p{margin:0 0 22px;color:var(--muted);max-width:720px}
 /* cta */
@@ -261,7 +262,7 @@ h2 em,h1 em{font-style:italic;color:var(--wine)}
       <div class="hero-btns"><a class="btn btn-cream" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BD%D0%BE%D0%B5%20%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5." target="_blank" rel="noopener">Бесплатное пробное занятие<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-ghost" href="#worry">Что вас беспокоит?</a></div>
       <dl class="stats">
         <div><dt>14+</dt><dd>лет работы<br>с женщинами</dd></div>
-        <div><dt>3 + 1</dt><dd>женские группы<br>и детская</dd></div>
+        <div><dt>50+</dt><dd>тренировок<br>в записи</dd></div>
         <div><dt>0 ₽</dt><dd>первое<br>занятие</dd></div>
       </dl>
     </div>
@@ -285,7 +286,7 @@ h2 em,h1 em{font-style:italic;color:var(--wine)}
 <section class="sec" id="worry"><div class="wrap">
   <div class="worry">
     <p class="kick">Тест · 1 минута</p>
-    <h2>Какая программа подходит <em>именно вам?</em></h2>
+    <h2>С чего начать <em>именно вам?</em></h2>
     <p class="lead">Многое из этого я прошла сама — и знаю, что телу можно помочь. Пройдите тест и узнайте, с чего начать.</p>
     <div class="quiz" data-quiz data-tg="https://t.me/annanaryadchicova?text=">
   <div class="q-top"><span class="q-step" aria-live="polite">Начало</span><div class="q-bar" aria-hidden="true"><i></i></div></div>
@@ -308,7 +309,7 @@ h2 em,h1 em{font-style:italic;color:var(--wine)}
     <div class="q-method"><b>Как работает Метод Анны</b><ol><li><span>1</span>Выравниваем ось тела</li><li><span>2</span>Мягко укрепляем без стресса</li><li><span>3</span>Силовые — когда тело готово</li></ol></div>
     <p class="q-about">Я — специалист по женскому здоровью, телесный терапевт и массажист. Более 14 лет работаю с женщинами — от юных девушек до бабушек. Сама прошла через лишний вес +20 кг, диастаз, недержание, головные боли и избежала операции на плечо.</p>
     <div class="q-actions"><a class="btn btn-wine q-send" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%20%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D0%BA.%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BE%D0%BA%D0%BE%D0%B8%D1%82%3A%20" target="_blank" rel="noopener">Записаться на бесплатное пробное<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><button type="button" class="btn btn-line q-restart">Пройти заново</button></div>
-    <p class="q-small">Кнопка откроет чат со мной в Telegram — ваши ответы уже будут в сообщении.<br>Формат: канал с тренировками в записи или занятия в Zoom по расписанию. Абонемент — 3 000 ₽/месяц, есть индивидуальная работа. Присоединиться можно в любой момент.</p>
+    <p class="q-small">Кнопка откроет чат со мной в Telegram — ваши ответы уже будут в сообщении.<br>Формат: канал с тренировками в записи или занятия в Zoom по расписанию. Есть и индивидуальная работа. Присоединиться можно в любой момент.</p>
     <p class="q-warn">Тест не заменяет консультацию врача.</p>
   </div>
 </div>
@@ -417,8 +418,8 @@ h2 em,h1 em{font-style:italic;color:var(--wine)}
       <div class="facts">
         <div class="fact"><b>14+</b><span>лет работаю с женщинами</span></div>
         <div class="fact"><b>40</b><span>лет, мама трёх дочек</span></div>
-        <div class="fact"><b>3 + 1</b><span>женские группы в Zoom и детская</span></div>
-        <div class="fact"><b>1 год+</b><span>сёстры занимаются со мной больше года</span></div>
+        <div class="fact"><b>7–15</b><span>лет — детская группа для девочек</span></div>
+        <div class="fact"><b>50+</b><span>тренировок в канале в записи</span></div>
       </div>
       <p class="about-note">Ко мне приходят и молоденькие девочки, и бабушки — есть опыт работы с каждой. Понимаю, как работает тело и как давать нагрузку.</p>
     </div>
@@ -426,15 +427,15 @@ h2 em,h1 em{font-style:italic;color:var(--wine)}
 </div></section>
 
 <section class="sec" id="formats" style="padding-top:0"><div class="wrap">
-  <p class="kick">Форматы и стоимость</p>
+  <p class="kick">Форматы участия</p>
   <h2>Как проходят <em>тренировки</em></h2>
   <div class="trial"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="1.5"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-4-6-1.5S10 8 12 8zm0 0c2-4 6-4 6-1.5S14 8 12 8z"/></svg>Первое пробное занятие — бесплатно</div>
   <div class="fmts">
-    <article class="fmt"><div class="fmt-ic"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3z"/></svg></div><h3>Тренировки в записи</h3><p>Закрытый канал с тренировками — занимаетесь дома в удобное время.</p><div class="price">3 000 ₽ <small>/ месяц</small></div><a class="btn btn-line" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B0%D0%B1%D0%BE%D0%BD%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%20%D0%BD%D0%B0%20%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8." target="_blank" rel="noopener">Хочу в записи<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
-    <article class="fmt hl"><div class="fmt-ic"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 14.6c2.8-.6 6 1.3 6 4.4"/></svg></div><h3>Zoom по расписанию</h3><p>Живые тренировки в группе. Сейчас идут три женские группы и одна детская — для девочек от 7 до 15 лет.</p><div class="price">3 000 ₽ <small>/ месяц</small></div><a class="btn btn-wine" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%20%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B5%20%D0%B2%20Zoom%20%D0%BF%D0%BE%20%D1%80%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8E." target="_blank" rel="noopener">Хочу в группу<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-line" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%20%D0%B4%D0%BE%D1%87%D0%BA%D1%83%20%D0%B2%20%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D1%83%D1%8E%20%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D1%83." target="_blank" rel="noopener">Детская группа</a></article>
-    <article class="fmt"><div class="fmt-ic"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></div><h3>Индивидуально</h3><p>Работа лично с вами — под ваш запрос и ваше тело.</p><div class="price" style="font-size:26px">По запросу</div><a class="btn btn-line" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%D0%B1%20%D0%B8%D0%BD%D0%B4%D0%B8%D0%B2%D0%B8%D0%B4%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B5." target="_blank" rel="noopener">Узнать подробнее<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+    <article class="fmt"><div class="fmt-ic"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3z"/></svg></div><h3>Тренировки в записи</h3><p>Закрытый канал: более 50 тренировок — занимаетесь дома в удобное время.</p><a class="btn btn-line" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BF%D0%BE%20%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%D0%BC%20%D0%B2%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8." target="_blank" rel="noopener">Хочу в записи<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+    <article class="fmt hl"><div class="fmt-ic"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 14.6c2.8-.6 6 1.3 6 4.4"/></svg></div><h3>Zoom по расписанию</h3><p>Живые тренировки в женских группах. Есть и детская группа — для девочек от 7 до 15 лет.</p><a class="btn btn-wine" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%20%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B5%20%D0%B2%20Zoom%20%D0%BF%D0%BE%20%D1%80%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8E." target="_blank" rel="noopener">Хочу в группу<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-line" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%20%D0%B4%D0%BE%D1%87%D0%BA%D1%83%20%D0%B2%20%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D1%83%D1%8E%20%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D1%83." target="_blank" rel="noopener">Детская группа</a></article>
+    <article class="fmt"><div class="fmt-ic"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></div><h3>Индивидуально</h3><p>Работа лично с вами — под ваш запрос и ваше тело.</p><a class="btn btn-line" href="https://t.me/annanaryadchicova?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D1%8F%D0%B9%D0%BA%D1%83%D0%BC%20%D0%B2%D0%B0%20%D1%80%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%83%D0%9B%D0%BB%D0%B0%D1%85%D0%B8%20%D0%B2%D0%B0%20%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D1%8F%D1%82%D1%83%D1%85%2C%20%D0%90%D0%BD%D0%BD%D0%B0%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%D0%B1%20%D0%B8%D0%BD%D0%B4%D0%B8%D0%B2%D0%B8%D0%B4%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B5." target="_blank" rel="noopener">Узнать подробнее<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
   </div>
-  <p class="note">Все программы длительные и регулярные — присоединиться можно в любой момент.</p>
+  <p class="note">Программа одна — длительная и регулярная, а формат участия вы выбираете сами. Присоединиться можно в любой момент.</p>
 </div></section>
 
 <section class="sec" id="edu" style="padding-top:0"><div class="wrap">
@@ -486,7 +487,7 @@ h2 em,h1 em{font-style:italic;color:var(--wine)}
 <section class="sec" id="faq" style="padding-top:0"><div class="wrap">
   <p class="kick">Вопросы</p>
   <h2>Частые <em>вопросы</em></h2>
-  <div class="faqs"><details class="faq"><summary>Сколько стоит?<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Абонемент на месяц — 3 000 ₽. Есть индивидуальный формат работы — стоимость обсуждаем лично. Первое пробное занятие — бесплатно.</p></details><details class="faq"><summary>В каком формате проходят тренировки?<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Два формата: канал с тренировками в записи — занимаетесь в удобное время, и тренировки по расписанию в Zoom. Сейчас идут три женские группы и одна детская — для девочек от 7 до 15 лет.</p></details><details class="faq"><summary>Какое нужно оборудование?<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Есть длинный список рекомендованного, но я всегда предлагаю замены из того, что есть под рукой. Например, вместо ролла подойдёт банное полотенце, скрученное в ролл.</p></details><details class="faq"><summary>Можно присоединиться сейчас?<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Да. Все программы длительные и регулярные, поэтому присоединиться можно в любой момент. Есть сёстры, которые занимаются больше года — это помогает поддерживать себя в форме.</p></details><details class="faq"><summary>Мне подойдёт? Я никогда не занималась / мне уже много лет<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Ко мне обращаются и молоденькие девочки, и бабушки — есть опыт работы с каждой. Нагрузку даю по вашему телу: сначала выравниваем ось, потом мягко укрепляем, силовые — только когда тело готово.</p></details><details class="faq"><summary>Как записаться?<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Напишите мне в Telegram — кнопки на этой странице открывают чат с уже готовым сообщением. Начнём с бесплатного пробного занятия.</p></details></div>
+  <div class="faqs"><details class="faq"><summary>Сколько стоит?<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Стоимость обсуждаем лично — напишите мне в Telegram. Первое пробное занятие — бесплатно.</p></details><details class="faq"><summary>В каком формате проходят тренировки?<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Программа одна, а форматы участия разные: канал с тренировками в записи — более 50 тренировок, занимаетесь в удобное время; живые тренировки по расписанию в Zoom — в женских группах, есть и детская группа для девочек от 7 до 15 лет; и индивидуальная работа.</p></details><details class="faq"><summary>Какое нужно оборудование?<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Есть длинный список рекомендованного, но я всегда предлагаю замены из того, что есть под рукой. Например, вместо ролла подойдёт банное полотенце, скрученное в ролл.</p></details><details class="faq"><summary>Можно присоединиться сейчас?<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Да. Программа длительная и регулярная, поэтому присоединиться можно в любой момент. Многие сёстры остаются со мной надолго — регулярность помогает поддерживать себя в форме.</p></details><details class="faq"><summary>Мне подойдёт? Я никогда не занималась / мне уже много лет<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Ко мне обращаются и молоденькие девочки, и бабушки — есть опыт работы с каждой. Нагрузку даю по вашему телу: сначала выравниваем ось, потом мягко укрепляем, силовые — только когда тело готово.</p></details><details class="faq"><summary>Как записаться?<span class="faq-i" aria-hidden="true"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Напишите мне в Telegram — кнопки на этой странице открывают чат с уже готовым сообщением. Начнём с бесплатного пробного занятия.</p></details></div>
 </div></section>
 
 <section id="contact"><div class="wrap">
